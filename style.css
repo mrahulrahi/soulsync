@@ -55,7 +55,7 @@
   margin: 0.5rem 0;
 }
 
-.mini-function-styling {
+.mini-function {
   border: #000;
   width: 3.5rem;
   color: #dfcee5;
@@ -67,7 +67,7 @@
   height: 2rem;
 }
 
-.mini-function-styling:active {
+.mini-function:active {
   background-color: #4f4256;
   border-radius: 31.25rem;
 }
@@ -187,7 +187,7 @@
   transition: var(--transition-time);
 }
 
-.algo-function-class {
+.algo-function {
   width: 4.2rem;
   height: 4.1rem;
   border-radius: 50%;
@@ -199,7 +199,7 @@
   font-family: googlefont;
 }
 
-.algo-function-class:active {
+.algo-function:active {
   background-color: #4f4256;
   border-radius: 20%;
   transition: var(--transition-time);
