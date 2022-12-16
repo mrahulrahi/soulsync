@@ -62,14 +62,14 @@
   background-color: inherit;
   transition: var(--transition-time);
   font-size: 1.2rem;
-  font-family: "OpenSansRegular";
+  font-family: googlefont;
   font-weight: 600;
   height: 2rem;
 }
 
 .mini-function-styling:active {
+  background-color: #4f4256;
   border-radius: 31.25rem;
-  background-color: var(--Primary-number-color);
 }
 
 .previous-input {
@@ -201,7 +201,6 @@
 
 .algo-function-class:active {
   background-color: #4f4256;
-
   border-radius: 20%;
   transition: var(--transition-time);
 }
@@ -223,6 +222,10 @@
   transition: var(--transition-time);
 
   background: #5b3774;
+}
+
+.input-button i {
+  color: #f4d9ff;
 }
 
 .footer {
