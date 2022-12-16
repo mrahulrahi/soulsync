@@ -13,17 +13,29 @@ for (item of buttons) {
       buttonText = "*";
       screenValue += buttonText;
       screen.value = screenValue;
+    } else if (buttonText == "÷") {
+      buttonText = "/";
+      screenValue += buttonText;
+      screen.value = screenValue;
     } else if (buttonText == "AC") {
       screenValue = "";
       screen.value = screenValue;
     } else if (buttonText == "√") {
-      screen.value = eval(Math.sqrt(screenValue));
+      buttonText = "√";
+      screenValue += buttonText;
+      screen.value = screenValue;
     } else if (buttonText == "^") {
-      screen.value = eval(Math.power(screenValue));
+      buttonText = "^";
+      screenValue += buttonText;
+      screen.value = screenValue;
     } else if (buttonText == "π") {
-      screen.value = eval(Math.PI(screenValue));
+      buttonText = "π";
+      screenValue += buttonText;
+      screen.value = screenValue;
     } else if (buttonText == "!") {
-      screen.value = eval(Math.exp(screenValue));
+      buttonText = "!";
+      screenValue += buttonText;
+      screen.value = screenValue;
     } else if (buttonText == "=") {
       screen.value = eval(screenValue);
     } else {
