@@ -50,14 +50,15 @@
   height: 4rem;
   color: #dfcee5;
   background: #151715;
-  margin: 0.5rem 0;
+  margin: 1rem 0 0.5rem;
 }
 
 .mini-function {
   border: #000;
-  width: 3.5rem;
+  width: 4rem;
   color: #dfcee5;
-  background-color: inherit;
+  background-color: #4f4256;
+  border-radius: 31.25rem;
   transition: var(--transition-time);
   font-size: 1.2rem;
   font-weight: 600;
@@ -65,8 +66,8 @@
 }
 
 .mini-function:active {
-  background-color: #4f4256;
-  border-radius: 31.25rem;
+  border-radius: 10%;
+  transition: 0.08s cubic-bezier(0, 0.01, 1, 1);
 }
 
 .output-operation-class {
@@ -113,13 +114,6 @@
   outline: none;
 }
 
-.input-button svg {
-  width: 1.45rem;
-  margin-right: 0.38rem;
-  margin-top: 0.4rem;
-  fill: #eddbf3;
-}
-
 .input-class {
   display: grid;
   width: 19rem;
@@ -134,7 +128,11 @@
   padding-bottom: 0.5em;
 }
 
-.input-button {
+.number-btn,
+.C-btn,
+.AC-btn,
+.function-btn,
+.equal-btn {
   width: 4.3rem;
   height: 4.1rem;
   border-radius: 60%;
@@ -145,66 +143,41 @@
   font-size: 1.7rem;
 }
 
-.input-button:active {
+.number-btn:active,
+.C-btn:active {
   transition: var(--transition-time);
   border-radius: 20%;
   background-color: #262229;
 }
 
-.AC-class {
-  width: 4.3rem;
-  height: 4.1rem;
-  border-radius: 60%;
+.AC-btn {
   color: #fcd7da;
   background: #6e353b;
-  font-size: 1.6rem;
-  border: #000;
-  text-align: center;
 }
 
-.AC-class:active {
+.AC-btn:active {
   border-radius: 20%;
-  background-color: #262229;
   transition: var(--transition-time);
 }
 
-.algo-function {
-  width: 4.2rem;
-  height: 4.1rem;
-  border-radius: 50%;
-  font-size: 1.6rem;
+.function-btn {
   color: #efddf5;
   background: #4f4256;
-  border: #000;
-  text-align: center;
 }
 
-.algo-function:active {
-  background-color: #4f4256;
+.function-btn:active {
   border-radius: 20%;
   transition: var(--transition-time);
 }
 
-.equal-class {
-  width: 4.3rem;
-  height: 4.1rem;
-  border-radius: 60%;
-  font-size: 1.5rem;
+.equal-btn {
   color: #f4d9ff;
   background: #5b3774;
-  border: #000;
-  text-align: center;
 }
 
-.equal-class:active {
+.equal-btn:active {
   border-radius: 20%;
   transition: var(--transition-time);
-
-  background: #5b3774;
-}
-
-.input-button i {
-  color: #f4d9ff;
 }
 
 .footer {
@@ -225,79 +198,6 @@
 
 .footer i {
   color: #dfcee5;
-}
-
-@media screen and (max-width: 430px) and (max-height: 600px) {
-  :root {
-    font-size: 18px;
-  }
-
-  .input-button:active,
-  .algo-function-class:active,
-  .equall-class:active,
-  .AC-class:active {
-    border-radius: 20%;
-    transition: 0.08s cubic-bezier(0, 0.01, 1, 1);
-  }
-
-  .android-frame {
-    border: none;
-    box-shadow: none;
-    background-color: none;
-    width: 100vw;
-    height: 100vh;
-  }
-
-  .mini-algo-function {
-    width: 100vw;
-  }
-
-  .mini-function-styling {
-    font-size: 1.5rem;
-  }
-  .output-operation-class {
-    width: inherit;
-    border-radius: 0rem 0rem 1.2rem 1.2rem;
-  }
-
-  .input-class {
-    width: inherit;
-    border-radius: none;
-  }
-
-  .input-button {
-    width: 5.3rem;
-    height: 5.1rem;
-    font-size: 2rem;
-  }
-
-  .algo-function-class,
-  .AC-class,
-  .input-button,
-  .equall-class {
-    width: 5.5rem;
-    height: 4.5rem;
-    font-size: 1.7rem;
-    border-radius: 500px;
-  }
-
-  .output-screen {
-    width: 96vw;
-    font-size: 4rem;
-    justify-self: flex-end;
-    margin-right: 1.3rem;
-  }
-
-  .error-window {
-    max-width: 96vw;
-    font-size: 2.3rem;
-    margin-right: 1.3rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .input-button img {
-    width: 1.9rem;
-  }
 }
 
 @media screen and (max-width: 380px) {

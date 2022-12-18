@@ -9,12 +9,13 @@ Array.prototype.forEach.call(buttons, function (button) {
       button.textContent != "AC" &&
       button.textContent != "x" &&
       button.textContent != "÷" &&
-      button.textContent != "%" &&
       button.textContent != "C" &&
+      button.textContent != "π" &&
+      button.textContent != "%" &&
+      button.textContent != "x²" &&
       button.textContent != "√" &&
       button.textContent != "^" &&
-      button.textContent != "!" &&
-      button.textContent != "π"
+      button.textContent != "!"
     ) {
       display.value += button.textContent;
     } else if (button.textContent === "=") {
@@ -27,10 +28,12 @@ Array.prototype.forEach.call(buttons, function (button) {
       divide();
     } else if (button.textContent === "C") {
       backspace();
-    } else if (button.textContent === "%") {
-      percent();
     } else if (button.textContent === "π") {
       pi();
+    } else if (button.textContent === "%") {
+      percent();
+    } else if (button.textContent === "x²") {
+      square();
     } else if (button.textContent === "√") {
       squareRoot();
     } else if (button.textContent === "^") {
@@ -100,6 +103,10 @@ function pi() {
   } else {
     display.value = display.value * Math.PI;
   }
+}
+
+function square() {
+  display.value = eval(display.value * display.value);
 }
 
 function squareRoot() {
