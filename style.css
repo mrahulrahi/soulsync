@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans", sans;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .main-class {
@@ -60,7 +60,6 @@
   background-color: inherit;
   transition: var(--transition-time);
   font-size: 1.2rem;
-  font-family: googlefont;
   font-weight: 600;
   height: 2rem;
 }
@@ -77,7 +76,6 @@
   background-color: #dfe5db;
   border: #000;
   font-size: 3.5rem;
-  font-family: googlefont;
   justify-self: flex-end;
   align-self: center;
 }
@@ -96,8 +94,7 @@
   height: 4rem;
   text-align: right;
   border: #000;
-  font-size: 3.5rem;
-  font-family: googlefont;
+  font-size: 3rem;
   align-self: flex-end;
   padding: 0;
   justify-self: center;
@@ -114,7 +111,6 @@
   text-align: right;
   border: #000;
   font-size: 1.9rem;
-  font-family: googlefont;
   justify-self: flex-end;
   align-self: flex-end;
   background: #37303c;
@@ -157,7 +153,6 @@
   background: #262229;
   border: #000;
   text-align: center;
-  font-family: googlefont;
   font-size: 1.7rem;
 }
 
@@ -176,7 +171,6 @@
   font-size: 1.6rem;
   border: #000;
   text-align: center;
-  font-family: googlefont;
 }
 
 .AC-class:active {
@@ -194,7 +188,6 @@
   background: #4f4256;
   border: #000;
   text-align: center;
-  font-family: googlefont;
 }
 
 .algo-function:active {
@@ -203,7 +196,7 @@
   transition: var(--transition-time);
 }
 
-.equall-class {
+.equal-class {
   width: 4.3rem;
   height: 4.1rem;
   border-radius: 60%;
@@ -212,10 +205,9 @@
   background: #5b3774;
   border: #000;
   text-align: center;
-  font-family: googlefont;
 }
 
-.equall-class:active {
+.equal-class:active {
   border-radius: 20%;
   transition: var(--transition-time);
 
@@ -227,26 +219,23 @@
 }
 
 .footer {
-  font-family: googlefont;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   text-align: center;
   color: #dfcee5;
   background-color: #151715;
   border-radius: 2em;
   width: 15em;
-  padding: 0.5em;
+  padding: 1em;
 }
 
 .footer a {
-  font-family: googlefont;
   text-decoration: none;
   color: #dfcee5;
 }
 
 .footer i {
   color: #dfcee5;
-  width: 1em;
 }
 
 @media screen and (max-width: 430px) and (max-height: 600px) {
