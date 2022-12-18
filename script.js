@@ -9,13 +9,12 @@ Array.prototype.forEach.call(buttons, function (button) {
       button.textContent != "AC" &&
       button.textContent != "x" &&
       button.textContent != "÷" &&
-      button.textContent != "√" &&
       button.textContent != "%" &&
-      button.textContent != "<=" &&
+      button.textContent != "C" &&
+      button.textContent != "√" &&
       button.textContent != "^" &&
       button.textContent != "!" &&
-      button.textContent != "π" &&
-      button.textContent != "e"
+      button.textContent != "π"
     ) {
       display.value += button.textContent;
     } else if (button.textContent === "=") {
@@ -26,7 +25,7 @@ Array.prototype.forEach.call(buttons, function (button) {
       multiply();
     } else if (button.textContent === "÷") {
       divide();
-    } else if (button.textContent === "<=") {
+    } else if (button.textContent === "C") {
       backspace();
     } else if (button.textContent === "%") {
       percent();
@@ -38,10 +37,6 @@ Array.prototype.forEach.call(buttons, function (button) {
       exponent();
     } else if (button.textContent === "!") {
       factorial();
-    } else if (button.textContent === "rad") {
-      radians();
-    } else if (button.textContent === "∘") {
-      degrees();
     }
   });
 });
@@ -84,14 +79,6 @@ function divide() {
   display.value += "/";
 }
 
-function plusMinus() {
-  if (display.value.charAt(0) === "-") {
-    display.value = display.value.slice(1);
-  } else {
-    display.value = "-" + display.value;
-  }
-}
-
 function factorial() {
   var number = 1;
   if (display.value === 0) {
@@ -108,7 +95,11 @@ function factorial() {
 }
 
 function pi() {
-  display.value = display.value * Math.PI;
+  if (display.value == 0) {
+    display.value = 1 * Math.PI;
+  } else {
+    display.value = display.value * Math.PI;
+  }
 }
 
 function squareRoot() {
