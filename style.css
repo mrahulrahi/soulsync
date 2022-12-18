@@ -1,17 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
+
 :root {
   --transition-time: 0.2s cubic-bezier(0, 0.01, 1, 1);
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: googlefont;
-  src: url(font-resources/ProductSans-Regular.ttf);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans;
 }
 
 .main-class {
