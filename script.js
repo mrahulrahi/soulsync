@@ -34,12 +34,10 @@ Array.prototype.forEach.call(buttons, function (button) {
       pi();
     } else if (button.textContent === "√") {
       squareRoot();
-    } else if (button.textContent === "x^") {
+    } else if (button.textContent === "^") {
       exponent();
-    } else if (button.textContent === "x !") {
+    } else if (button.textContent === "!") {
       factorial();
-    } else if (button.textContent === "e") {
-      exp();
     } else if (button.textContent === "rad") {
       radians();
     } else if (button.textContent === "∘") {
@@ -123,8 +121,4 @@ function percent() {
 
 function exponent() {
   display.value += "^";
-}
-
-function exp() {
-  display.value = Math.exp(display.value);
 }

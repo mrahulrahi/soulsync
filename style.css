@@ -69,17 +69,6 @@
   border-radius: 31.25rem;
 }
 
-.previous-input {
-  max-width: 19rem;
-  width: 2ch;
-  height: auto;
-  background-color: #dfe5db;
-  border: #000;
-  font-size: 3.5rem;
-  justify-self: flex-end;
-  align-self: center;
-}
-
 .output-operation-class {
   width: 19.5rem;
   border-radius: 1.4rem 1.4rem 1.2rem 1.2rem;
