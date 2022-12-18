@@ -1,5 +1,4 @@
 let display = document.getElementById("output-id");
-let errorDisplay = document.getElementById("error-window-id");
 let buttons = document.getElementsByClassName("button");
 
 Array.prototype.forEach.call(buttons, function (button) {
@@ -46,11 +45,11 @@ Array.prototype.forEach.call(buttons, function (button) {
 
 function syntaxError() {
   if (
-    eval(errorDisplay.value) == SyntaxError ||
-    eval(errorDisplay.value) == ReferenceError ||
-    eval(errorDisplay.value) == TypeError
+    eval(display.value) == SyntaxError ||
+    eval(display.value) == ReferenceError ||
+    eval(display.value) == TypeError
   ) {
-    errorDisplay.value == "Syntax Error";
+    display.value == "Syntax Error";
   }
 }
 
