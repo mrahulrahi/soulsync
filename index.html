@@ -1,70 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"
-      integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      type="text/css"
     />
-
-    <script src="script.js " defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <div class="main-class" id="main-container">
-      <div class="android-frame">
-        <div class="output-operation-class" id="output-operation">
-          <input
-            readonly
-            class="output-screen"
-            type="text"
-            id="output-id"
-            autofocus=""
-          />
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="index.html" class="pull-left visible-md visible-lg">
+                <div id="logo-img"></div>
+              </a>
+            </div>
+
+            <button
+              id="navbarToggle"
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#collapsable-nav"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li id="navHomeButton" class="visible-xs active">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span> Home</a
+                >
+              </li>
+              <li id="navMenuButton">
+                <a href="#" onclick="$dc.loadMenuCategories();">
+                  <span class="glyphicon glyphicon-cutlery"></span
+                  ><br class="hidden-xs" />
+                  Menu</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-info-sign"></span
+                  ><br class="hidden-xs" />
+                  About</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-certificate"></span
+                  ><br class="hidden-xs" />
+                  Awards</a
+                >
+              </li>
+              <li id="phone" class="hidden-xs">
+                <a href="tel:410-602-5008"> <span>410-602-5008</span></a>
+                <div>* We Deliver</div>
+              </li>
+            </ul>
+            <!-- #nav-list -->
+          </div>
+          <!-- .collapse .navbar-collapse -->
         </div>
-        <div class="mini-algo-function">
-          <button class="button mini-function">x²</button>
-          <button class="button mini-function">√</button>
-          <button class="button mini-function">^</button>
-          <button class="button mini-function">!</button>
+        <!-- .container -->
+      </nav>
+      <!-- #header-nav -->
+    </header>
+
+    <div id="call-btn" class="visible-xs">
+      <a class="btn" href="tel:410-602-5008">
+        <span class="glyphicon glyphicon-earphone"></span>
+        410-602-5008
+      </a>
+    </div>
+    <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+    <div id="main-content" class="container"></div>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Hours:</span><br />
+            Sun-Thurs: 11:15am - 10:00pm<br />
+            Fri: 11:15am - 2:30pm<br />
+            Saturday Closed
+            <hr class="visible-xs" />
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Address:</span><br />
+            7105 Reisterstown Road<br />
+            Baltimore, MD 21215
+            <p>
+              * Delivery area within 3-4 miles, with minimum order of $20 plus
+              $3 charge for all deliveries.
+            </p>
+            <hr class="visible-xs" />
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>
+              "The best restaurant I've been to! And that's saying a lot, since
+              I've been to many!"
+            </p>
+            <p>
+              "Amazing food! Great service! Couldn't ask for more! I'll be back
+              again and again!"
+            </p>
+          </section>
         </div>
-        <div class="input-class">
-          <button class="button AC-btn">AC</button>
-          <button class="button function-btn">π</button>
-          <button class="button function-btn">%</button>
-          <button class="button function-btn">÷</button>
-          <button class="button number-btn">7</button>
-          <button class="button number-btn">8</button>
-          <button class="button number-btn">9</button>
-          <button class="button function-btn">x</button>
-          <button class="button number-btn">4</button>
-          <button class="button number-btn">5</button>
-          <button class="button number-btn">6</button>
-          <button class="button function-btn">-</button>
-          <button class="button number-btn">1</button>
-          <button class="button number-btn">2</button>
-          <button class="button number-btn">3</button>
-          <button class="button function-btn">+</button>
-          <button class="button number-btn">0</button>
-          <button class="button number-btn">.</button>
-          <button class="button C-btn">C</button>
-          <button class="button equal-btn">=</button>
+        <div class="text-center">
+          &copy; Copyright Foodie Mind 2016 Coded ❤️ by
+          <a
+            class="hover:text-violet-400 underline"
+            href="https://github.com/mrahulrahi"
+            rel="noopener"
+            target="_blank"
+            >mrahulrahi</a
+          >.
         </div>
       </div>
-      <footer class="footer">
-        Made by
-        <a href="https://github.com/mrahulrahi">
-          <i class="fab fa-github"></i>
-          mrahulrahi
-        </a>
-      </footer>
-    </div>
+    </footer>
+
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
