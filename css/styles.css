@@ -94,9 +94,8 @@ body {
 .container .jumbotron {
   box-shadow: 0 0 50px #3f0c1f;
   border: 2px solid #3f0c1f;
-  border: 10px solid #3f0c1f;
+  border: 10px solid #f7eb9e;
   border-radius: 10px;
-}
 }
 
 #menu-tile,
@@ -106,9 +105,8 @@ body {
   width: 100%;
   margin-bottom: 15px;
   position: relative;
-  border: 2px solid #3f0c1f;
   overflow: hidden;
-  border: 10px solid #3f0c1f;
+  border: 10px solid #f7eb9e;
   border-radius: 10px;
 }
 #menu-tile:hover,
