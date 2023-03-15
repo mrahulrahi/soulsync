@@ -105,6 +105,8 @@ body {
   position: relative;
   border: 2px solid #3f0c1f;
   overflow: hidden;
+  border: 10px solid #3f0c1f;
+  border-radius: 10px;
 }
 #menu-tile:hover,
 #specials-tile:hover,
