@@ -27,7 +27,7 @@ $(function () {
   var allCategoriesUrl = "./json/categories.json";
   var categoriesTitleHtml = "snippets/categories-title-snippet.html";
   var categoryHtml = "snippets/category-snippet.html";
-  var menuItemsUrl = "./json/menu_items.json?category=";
+  var menuItemsUrl = "./json/menu_items.json";
   var menuItemsTitleHtml = "snippets/menu-items-title.html";
   var menuItemHtml = "snippets/menu-item.html";
 
