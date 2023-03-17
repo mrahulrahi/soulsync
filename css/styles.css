@@ -140,8 +140,8 @@ body {
 /* MENU CATEGORIES PAGE */
 .category-tile {
   position: relative;
-  border: 5px solid #f7eb9e;
-  border-radius: 5px;
+  border: 10px solid #f7eb9e;
+  border-radius: 10px;
   overflow: hidden;
   width: 200px;
   height: 200px;
