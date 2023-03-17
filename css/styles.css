@@ -93,7 +93,6 @@ body {
 /* HOME PAGE */
 .container .jumbotron {
   box-shadow: 0 0 50px #3f0c1f;
-
   border: 10px solid #f7eb9e;
   border-radius: 10px;
 }
@@ -141,7 +140,8 @@ body {
 /* MENU CATEGORIES PAGE */
 .category-tile {
   position: relative;
-  border: 2px solid #3f0c1f;
+  border: 5px solid #f7eb9e;
+  border-radius: 5px;
   overflow: hidden;
   width: 200px;
   height: 200px;
