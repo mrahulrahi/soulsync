@@ -247,6 +247,9 @@ h3.menu-item-title {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
+  #header-nav {
+    margin: 5px 5px 50px;
+  }
 
   .navbar-header {
     height: 100px;
