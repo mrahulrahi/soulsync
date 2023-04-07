@@ -24,12 +24,9 @@ $(function () {
   var dc = {};
 
   var homeHtml = "snippets/home-snippet.html";
-  var allCategoriesUrl = "./json/categories.json";
-  var categoriesTitleHtml = "snippets/categories-title-snippet.html";
-  var categoryHtml = "snippets/category-snippet.html";
-  var menuItemsUrl = "./json/menu_items.json";
-  var menuItemsTitleHtml = "snippets/menu-items-title.html";
-  var menuItemHtml = "snippets/menu-item.html";
+  var menuItemsUrl = "./json/categories.json";
+  var menuItemsTitleHtml = "snippets/categories-title-snippet.html";
+  var menuItemHtml = "snippets/category-snippet.html";
 
   // Convenience function for inserting innerHTML for 'select'
   var insertHtml = function (selector, html) {
