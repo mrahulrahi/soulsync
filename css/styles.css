@@ -288,6 +288,10 @@ h3.menu-item-title {
   }
   /* End Header */
 
+  .container .jumbotron {
+    border-radius: 10px;
+  }
+
   /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
@@ -332,8 +336,12 @@ h3.menu-item-title {
   /* Home page */
   #menu-tile,
   #specials-tile {
-    width: 280px;
+    width: 350px;
     margin: 0 auto 15px;
+  }
+
+  .container .jumbotron {
+    border-radius: 10px;
   }
 
   .col-xxs-12 {
