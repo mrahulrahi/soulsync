@@ -218,6 +218,7 @@ h3.menu-item-title {
   .container .jumbotron {
     background: url("../images/jumbotron_1200.jpg") no-repeat;
     height: 675px;
+    border-radius: 10px;
   }
 }
 
@@ -227,6 +228,7 @@ h3.menu-item-title {
   .container .jumbotron {
     background: url("../images/jumbotron_992.jpg") no-repeat;
     height: 558px;
+    border-radius: 10px;
   }
   /* End Home Page */
 }
@@ -237,6 +239,7 @@ h3.menu-item-title {
   .container .jumbotron {
     background: url("../images/jumbotron_768.jpg") no-repeat;
     height: 432px;
+    border-radius: 10px;
   }
   /* End Home Page */
 }

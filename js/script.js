@@ -22,7 +22,6 @@ $(function () {
 
 (function (global) {
   var dc = {};
-
   var homeHtml = "snippets/home-snippet.html";
   var menuItemsUrl = "./json/categories.json";
   var menuItemsTitleHtml = "snippets/categories-title-snippet.html";
