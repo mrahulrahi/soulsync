@@ -27,6 +27,8 @@ body {
 #nav-list a {
   color: #e6b17e;
   text-align: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 #nav-list a:hover {
   background: #557c3e;
