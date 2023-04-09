@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Yatra+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+
 body {
   font-size: 16px;
   color: #fff;
@@ -29,6 +33,7 @@ body {
   text-align: center;
   margin-bottom: 10px;
   border-radius: 10px;
+  font-family: "Short Stack", cursive;
 }
 #nav-list a:hover {
   background: #e6b17e;
@@ -87,6 +92,19 @@ body {
   border-radius: 10px;
 }
 
+#jumbotron-title {
+  width: 100%;
+  height: 100%;
+  font-family: "Alkatra", cursive;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bolder;
+  color: #e6b17e;
+  letter-spacing: 0.1em;
+  opacity: 0.9;
+  margin-top: 150px;
+}
+
 #beverages-tile,
 #snacks-tile,
 #desserts-tile {
@@ -122,11 +140,11 @@ body {
   right: 0;
   width: 100%;
   text-align: center;
+  font-family: "Yatra One", cursive;
   font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.8;
+  background-color: #551e19;
+  color: #e6b17e;
+  opacity: 0.9;
 }
 /* END HOME PAGE */
 
@@ -211,6 +229,10 @@ h3.menu-item-title {
   .container .jumbotron {
     height: 675px;
   }
+
+  #jumbotron-title {
+    font-size: 7em;
+  }
 }
 
 /********** Medium devices only **********/
@@ -218,12 +240,20 @@ h3.menu-item-title {
   .container .jumbotron {
     height: 558px;
   }
+  #jumbotron-title {
+    font-size: 5em;
+    margin-top: 100px;
+  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .container .jumbotron {
     height: 432px;
+  }
+  #jumbotron-title {
+    font-size: 4em;
+    margin-top: 100px;
   }
 }
 
@@ -255,6 +285,13 @@ h3.menu-item-title {
   }
 
   /* End Header */
+  .container .jumbotron {
+    height: 300px;
+  }
+  #jumbotron-title {
+    margin-top: 50px;
+    font-size: 3em;
+  }
 
   /* Footer */
   .panel-footer section {
