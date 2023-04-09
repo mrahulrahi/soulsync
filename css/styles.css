@@ -7,7 +7,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-  background-color: #557c3e;
+  background-color: wheat;
   border-radius: 0;
   border: 0;
   margin: 10px 50px 50px;
@@ -35,21 +35,6 @@ body {
 }
 #nav-list a span {
   font-size: 1.8em;
-}
-
-#phone {
-  margin-top: 5px;
-}
-#phone a {
-  /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
-}
-#phone div {
-  /* We Deliver */
-  color: #551e19;
-  text-align: right;
-  padding-right: 15px;
 }
 
 .navbar-header button.navbar-toggle,
@@ -262,9 +247,9 @@ h3.menu-item-title {
   }
 
   #logo-img {
-    width: 125px;
-    height: 125px;
-    margin: -30px 30px 0;
+    width: 200px;
+    height: 75px;
+    margin: 0px 30px;
   }
 
   #collapsable-nav a {
@@ -277,21 +262,6 @@ h3.menu-item-title {
     margin-right: 5px;
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
-  #xs-deliver {
-    margin-top: 5px;
-    font-size: 0.7em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
   /* End Header */
 
   .container .jumbotron {
