@@ -118,8 +118,6 @@ body {
 #beverages-tile {
   background: url("../images/beverages.jpg") no-repeat;
   background-position: center;
-  width: 300px;
-  height: auto;
 }
 #snacks-tile {
   background: url("../images/snacks.jpg") no-repeat;
