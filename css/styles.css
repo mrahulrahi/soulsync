@@ -100,9 +100,9 @@ body {
   border-radius: 10px;
 }
 
-#menu-tile,
-#specials-tile,
-#map-tile {
+#beverages-tile,
+#snacks-tile,
+#desserts-tile {
   height: 250px;
   width: 100%;
   margin-bottom: 15px;
@@ -110,22 +110,28 @@ body {
   overflow: hidden;
   border-radius: 10px;
 }
-#menu-tile:hover,
-#specials-tile:hover,
-#map-tile:hover {
+#beverages-tile:hover,
+#snacks-tile:hover,
+#desserts-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
-#menu-tile {
-  background: url("../images/menu-tile.jpg") no-repeat;
+#beverages-tile {
+  background: url("../images/beverages.jpg") no-repeat;
+  background-position: center;
+  width: 300px;
+  height: auto;
+}
+#snacks-tile {
+  background: url("../images/snacks.jpg") no-repeat;
   background-position: center;
 }
-#specials-tile {
-  background: url("../images/specials-tile.jpg") no-repeat;
+#desserts-tile {
+  background: url("../images/desserts.jpg") no-repeat;
   background-position: center;
 }
-#menu-tile span,
-#specials-tile span,
-#map-tile span {
+#beverages-tile span,
+#snacks-tile span,
+#desserts-tile span {
   position: absolute;
   bottom: 0;
   right: 0;
