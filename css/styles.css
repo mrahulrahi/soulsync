@@ -311,7 +311,9 @@ h3.menu-item-title {
   .container .jumbotron {
     margin-top: 30px;
     padding: 0;
+    border-radius: 10px;
   }
+
   #menu-tile,
   #specials-tile {
     width: 360px;
