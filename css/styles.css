@@ -7,7 +7,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-  background-color: #551e19;
+  background-color: #557c3e;
   border-radius: 0;
   border: 0;
   margin: 10px 50px 50px;
@@ -15,23 +15,23 @@ body {
 }
 
 #logo-img {
-  background: url("../images/restaurant-logo_large.png") center/cover no-repeat;
-  width: 150px;
-  height: 140px;
-  margin-top: -40px;
+  background: url("../images/restaurant-logo.png") center/cover no-repeat;
+  width: 300px;
+  height: 100px;
+  margin-top: -10px;
 }
 
 #nav-list {
   margin-top: 10px;
 }
 #nav-list a {
-  color: #e6b17e;
+  color: #551e19;
   text-align: center;
   margin-bottom: 10px;
   border-radius: 10px;
 }
 #nav-list a:hover {
-  background: #557c3e;
+  background: #e6b17e;
 }
 #nav-list a span {
   font-size: 1.8em;
@@ -47,7 +47,7 @@ body {
 }
 #phone div {
   /* We Deliver */
-  color: #557c3e;
+  color: #551e19;
   text-align: right;
   padding-right: 15px;
 }
