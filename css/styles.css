@@ -103,7 +103,7 @@ body {
 #beverages-tile,
 #snacks-tile,
 #desserts-tile {
-  height: 250px;
+  height: 240px;
   width: 100%;
   margin-bottom: 15px;
   position: relative;
@@ -318,8 +318,9 @@ h3.menu-item-title {
     border-radius: 10px;
   }
 
-  #menu-tile,
-  #specials-tile {
+  #beverages-tile,
+  #snacks-tile,
+  #desserts-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
@@ -342,8 +343,9 @@ h3.menu-item-title {
   /* End Header */
 
   /* Home page */
-  #menu-tile,
-  #specials-tile {
+  #beverages-tile,
+  #snacks-tile,
+  #desserts-tile {
     width: 350px;
     margin: 0 auto 15px;
   }
