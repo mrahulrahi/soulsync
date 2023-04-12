@@ -325,7 +325,9 @@ h3.menu-item-title {
     width: 100%;
   }
   /* End Footer */
-
+  .loading-img {
+    width: 100%;
+  }
   /* Home Page */
 
   #beverages-tile,
