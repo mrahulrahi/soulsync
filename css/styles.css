@@ -67,19 +67,19 @@ body {
   padding-bottom: 30px;
   background-color: #222;
   border-top: 0;
+  font-family: "Short Stack", cursive;
 }
 .panel-footer div.row {
   margin-bottom: 35px;
 }
-#hours,
-#address {
+#timings {
   line-height: 2;
+  font-size: 1.1em;
 }
-#hours > span,
-#address > span {
-  font-size: 1.3em;
+#timings > span {
+  font-size: 1.75em;
 }
-#address p {
+#timings p {
   color: #557c3e;
   font-size: 0.8em;
   line-height: 1.8;
