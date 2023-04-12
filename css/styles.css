@@ -48,7 +48,7 @@ body {
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 .fas {
@@ -271,13 +271,13 @@ h3.menu-item-title {
   }
 
   .navbar-header {
-    height: 100px;
+    height: 90px;
   }
 
   #logo-img {
-    width: 200px;
+    width: 225px;
     height: 75px;
-    margin: 0px 30px;
+    margin: 0px;
   }
 
   #collapsable-nav a {
