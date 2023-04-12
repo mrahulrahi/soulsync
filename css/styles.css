@@ -82,7 +82,7 @@ body {
 #timings p {
   color: #557c3e;
   font-size: 0.8em;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 #testimonials {
   font-style: italic;
@@ -153,6 +153,14 @@ body {
   background-color: #551e19;
   color: #e6b17e;
   opacity: 0.9;
+}
+
+.blend {
+  mix-blend-mode: darken;
+}
+
+.loading-img {
+  width: 500px;
 }
 /* END HOME PAGE */
 
