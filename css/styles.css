@@ -284,6 +284,10 @@ h3.menu-item-title {
     margin-right: 5px;
   }
 
+  li a i {
+    margin-bottom: 1em;
+  }
+
   /* End Header */
   .container .jumbotron {
     height: 300px;
