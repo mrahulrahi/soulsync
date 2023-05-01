@@ -20,51 +20,6 @@ $(function () {
   });
 });
 
-
-// Fetch data from json file
-
-fetch("./json/categories.json")
-.then((response) => response.json())
-.then((data) => showInfo(data));
-
-function showInfo(data) {
-
-let beverage = data.categories.beverages(key);
-console.log(beverage);
-for (let i = 0; i < beverage.length; i++) {
-  console.table(beverage[i].name);
-  showLoading("#main-content");
-    document.querySelector("#main-content").innerHTML =
-      `<h2 id="menu-categories-title" class="text-center">
-      category Menu</h2>    
-        
-        <div class="menu-item-tile col-md-6">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="menu-item-photo">
-                <div>{{short_name}}</div>
-                <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
-                  alt="Item" />
-              </div>
-              <div class="menu-item-price">
-                {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
-                <span>{{large_portion_name}}</span>
-              </div>
-            </div>
-            <div class="menu-item-description col-sm-7">
-              <h3 class="menu-item-title">{{name}}</h3>
-              <p class="menu-item-details">{{description}}</p>
-            </div>
-          </div>
-          <hr class="visible-xs" />
-        </div>`;
-
-}
-
-}
-
-
-
 (function (global) {
   var dc = {};
   var homeHtml = "snippets/home-snippet.html";
@@ -111,11 +66,122 @@ for (let i = 0; i < beverage.length; i++) {
     );
   });
 
-    
- // Load the menu categories view
-$dc.loadMenuCategories() = function () {  
-  
- };
- 
+  // Fetch data from json file
+
+  // let dataGlobal;
+
+  // const getData = async () => {
+  //   const response = await fetch("./json/categories.json");
+  //   const data = await response.json();
+  //   dataGlobal = data;
+  //   return data;
+  // };
+  // (async () => {
+  //   await getData();
+  //   console.log(dataGlobal.categories);
+  // })();
+
+  // fetch("./json/categories.json")
+  //   .then((response) => response.json())
+  //   .then((data) => showInfo(data));
+
+  // function showInfo(data) {
+  //   let beverage = data.categories.beverages;
+  //   let snack = data.categories.snacks;
+  //   for (let i = 0; i < beverage.length; i++) {
+  //     console.table(beverage[i].name);
+  //   }
+  //   for (let j = 0; j < snack.length; j++) {
+  //     console.table(snack[j].name);
+  //   }
+  // }
+  // Load the menu categories view
+  dc.loadMenuBeverages = function () {
+    showLoading("#main-content");
+
+    document.querySelector(
+      "#main-content"
+    ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>    
+        
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>{{short_name}}</div>
+                <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
+                  alt="Item" />
+              </div>
+              <div class="menu-item-price">
+                {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
+                <span>{{large_portion_name}}</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">{{name}}</h3>
+              <p class="menu-item-details">{{description}}</p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>`;
+  };
+
+  dc.loadMenuSnacks = function () {
+    showLoading("#main-content");
+
+    document.querySelector(
+      "#main-content"
+    ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Snacks Menu</h2>    
+        
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>{{short_name}}</div>
+                <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
+                  alt="Item" />
+              </div>
+              <div class="menu-item-price">
+                {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
+                <span>{{large_portion_name}}</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">{{name}}</h3>
+              <p class="menu-item-details">{{description}}</p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>`;
+  };
+
+  dc.loadMenuDesserts = function () {
+    showLoading("#main-content");
+
+    document.querySelector(
+      "#main-content"
+    ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Desserts Menu</h2>    
+        
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>{{short_name}}</div>
+                <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
+                  alt="Item" />
+              </div>
+              <div class="menu-item-price">
+                {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
+                <span>{{large_portion_name}}</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">{{name}}</h3>
+              <p class="menu-item-details">{{description}}</p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>`;
+  };
+
   global.$dc = dc;
 })(window);
