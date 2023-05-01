@@ -20,21 +20,54 @@ $(function () {
   });
 });
 
-// fetch("./json/categories.json")
-//   .then((response) => response.json())
-//   .then((data) => showInfo(data));
 
-// function showInfo(data) {
-//   for (let i = 0; i < data.length; i++) {
-//     console.table(data[i].id);
-//   }
-// }
+// Fetch data from json file
+
+fetch("./json/categories.json")
+.then((response) => response.json())
+.then((data) => showInfo(data));
+
+function showInfo(data) {
+
+let beverage = data.categories.beverages(key);
+console.log(beverage);
+for (let i = 0; i < beverage.length; i++) {
+  console.table(beverage[i].name);
+  showLoading("#main-content");
+    document.querySelector("#main-content").innerHTML =
+      `<h2 id="menu-categories-title" class="text-center">
+      category Menu</h2>    
+        
+        <div class="menu-item-tile col-md-6">
+          <div class="row">
+            <div class="col-sm-5">
+              <div class="menu-item-photo">
+                <div>{{short_name}}</div>
+                <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
+                  alt="Item" />
+              </div>
+              <div class="menu-item-price">
+                {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
+                <span>{{large_portion_name}}</span>
+              </div>
+            </div>
+            <div class="menu-item-description col-sm-7">
+              <h3 class="menu-item-title">{{name}}</h3>
+              <p class="menu-item-details">{{description}}</p>
+            </div>
+          </div>
+          <hr class="visible-xs" />
+        </div>`;
+
+}
+
+}
+
+
 
 (function (global) {
   var dc = {};
   var homeHtml = "snippets/home-snippet.html";
-  var menuItemsTitleHtml = "snippets/categories-title-snippet.html";
-  var menuItemHtml = "snippets/category-snippet.html";
 
   // Convenience function for inserting innerHTML for 'select'
   var insertHtml = function (selector, html) {
@@ -78,16 +111,11 @@ $(function () {
     );
   });
 
-  // Load the menu categories view
-  dc.loadMenuCategories = function () {
-    showLoading("#main-content");
-    $ajaxUtils.sendGetRequest(
-      menuItemHtml,
-      function (responseText) {
-        document.querySelector("#main-content").innerHTML = responseText;
-      },
-      false
-    );
-
+    
+ // Load the menu categories view
+$dc.loadMenuCategories() = function () {  
+  
+ };
+ 
   global.$dc = dc;
 })(window);
