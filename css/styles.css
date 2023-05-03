@@ -36,6 +36,7 @@ body {
   border-radius: 10px;
   font-family: "Short Stack", cursive;
 }
+
 #nav-list a:hover,
 #nav-list a:active {
   background: #e6b17e;
@@ -49,6 +50,7 @@ body {
 .navbar-header .icon-bar {
   border: 1px solid #e6b17e;
 }
+
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -22.5px;
