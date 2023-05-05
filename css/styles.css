@@ -73,6 +73,7 @@ body {
   border-top: 0;
   font-family: "Short Stack", cursive;
 }
+
 .panel-footer div.row {
   margin-bottom: 35px;
 }
@@ -81,9 +82,11 @@ body {
   line-height: 2;
   font-size: 1.1em;
 }
+
 #timings > span {
   font-size: 1.75em;
 }
+
 #timings p {
   color: #557c3e;
   font-size: 0.8em;
