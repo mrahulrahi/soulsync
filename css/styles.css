@@ -104,6 +104,7 @@ body {
 /* END FOOTER */
 
 /* HOME PAGE */
+
 .container .jumbotron {
   box-shadow: 0 0 50px #3f0c1f;
   background: url("../images/cafe-bg.jpg") no-repeat;
@@ -134,23 +135,28 @@ body {
   overflow: hidden;
   border-radius: 10px;
 }
+
 #beverages-tile:hover,
 #snacks-tile:hover,
 #desserts-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
+
 #beverages-tile {
   background: url("../images/beverages.jpg") no-repeat;
   background-position: center;
 }
+
 #snacks-tile {
   background: url("../images/snacks.jpg") no-repeat;
   background-position: center;
 }
+
 #desserts-tile {
   background: url("../images/desserts.jpg") no-repeat;
   background-position: center;
 }
+
 #beverages-tile span,
 #snacks-tile span,
 #desserts-tile span {
