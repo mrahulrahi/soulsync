@@ -92,12 +92,15 @@ body {
   font-size: 0.8em;
   line-height: 1.5;
 }
+
 #testimonials {
   font-style: italic;
 }
+
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+
 /* END FOOTER */
 
 /* HOME PAGE */
