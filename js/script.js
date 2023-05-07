@@ -1,3 +1,7 @@
+import myJson from "../json/categories.json" assert { type: "json" };
+var categories = myJson.categories;
+var beverages = myJson.categories.beverages;
+
 $(function () {
   // Same as document.addEventListener("DOMContentLoaded"...
 
@@ -98,31 +102,35 @@ $(function () {
   // Load the menu categories view
   dc.loadMenuBeverages = function () {
     showLoading("#main-content");
-
-    document.querySelector(
-      "#main-content"
-    ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>    
-        
-        <div class="menu-item-tile col-md-6">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="menu-item-photo">
-                <div>{{short_name}}</div>
-                <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
-                  alt="Item" />
-              </div>
-              <div class="menu-item-price">
-                {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
-                <span>{{large_portion_name}}</span>
-              </div>
-            </div>
-            <div class="menu-item-description col-sm-7">
-              <h3 class="menu-item-title">{{name}}</h3>
-              <p class="menu-item-details">{{description}}</p>
-            </div>
-          </div>
-          <hr class="visible-xs" />
-        </div>`;
+    for (let i = 0; i < beverages.length; i++) {
+      document.querySelector("#main-content").innerHTML =
+        `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>    
+              
+              <div class="menu-item-tile col-md-6">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <div class="menu-item-photo">
+                      <div>` +
+        beverages[i].name +
+        `</div>
+                      <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
+                        alt="Item" />
+                    </div>
+                    <div class="menu-item-price">
+                      {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
+                      <span>{{large_portion_name}}</span>
+                    </div>
+                  </div>
+                  <div class="menu-item-description col-sm-7">
+                    <h3 class="menu-item-title">` +
+        beverages[i].name +
+        `</h3>
+                    <p class="menu-item-details">{{description}}</p>
+                  </div>
+                </div>
+                <hr class="visible-xs" />
+              </div>`;
+    }
   };
 
   dc.loadMenuSnacks = function () {
