@@ -102,11 +102,12 @@ $(function () {
   // Load the menu categories view
   dc.loadMenuBeverages = function () {
     showLoading("#main-content");
-    for (let i = 0; i < beverages.length; i++) {
-      document.querySelector("#main-content").innerHTML =
-        `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>    
-              
-              <div class="menu-item-tile col-md-6">
+    document.querySelector("#main-content").innerHTML =
+        `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>`        
+    }
+
+    function beverageCard (params) {
+      <div class="menu-item-tile col-md-6">
                 <div class="row">
                   <div class="col-sm-5">
                     <div class="menu-item-photo">
@@ -129,7 +130,8 @@ $(function () {
                   </div>
                 </div>
                 <hr class="visible-xs" />
-              </div>`;
+              </div>;
+      
     }
   };
 
