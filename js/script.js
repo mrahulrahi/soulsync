@@ -102,36 +102,49 @@ $(function () {
   // Load the menu categories view
   dc.loadMenuBeverages = function () {
     showLoading("#main-content");
-    document.querySelector("#main-content").innerHTML =
-        `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>`        
-    }
-
-    function beverageCard (params) {
-      <div class="menu-item-tile col-md-6">
+    document.querySelector(
+      "#main-content"
+    ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>`;
+    beverageCard();
+    function beverageCard() {
+      for (let i = 0; i < beverages.length; i++) {
+        console.log(beverages[i]);
+        document.querySelector("#menu-categories-title").insertAdjacentHTML =
+          `<div class="menu-item-tile col-md-6">
                 <div class="row">
                   <div class="col-sm-5">
                     <div class="menu-item-photo">
                       <div>` +
-        beverages[i].name +
-        `</div>
+          beverages[i].short_name +
+          `</div>
                       <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
                         alt="Item" />
                     </div>
                     <div class="menu-item-price">
-                      {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
-                      <span>{{large_portion_name}}</span>
+                      ` +
+          beverages[i].price_small +
+          `<span> ` +
+          beverages[i].small_portion_name +
+          `</span>` +
+          beverages[i].price_large +
+          `
+                      <span>` +
+          beverages[i].large_portion_name +
+          `</span>
                     </div>
                   </div>
                   <div class="menu-item-description col-sm-7">
                     <h3 class="menu-item-title">` +
-        beverages[i].name +
-        `</h3>
-                    <p class="menu-item-details">{{description}}</p>
+          beverages[i].name +
+          `</h3>
+                    <p class="menu-item-details">` +
+          beverages[i].description +
+          `</p>
                   </div>
                 </div>
                 <hr class="visible-xs" />
-              </div>;
-      
+              </div>`;
+      }
     }
   };
 
