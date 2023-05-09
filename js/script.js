@@ -1,6 +1,7 @@
 import myJson from "../json/categories.json" assert { type: "json" };
-var categories = myJson.categories;
 var beverages = myJson.categories.beverages;
+var snacks = myJson.categories.snacks;
+var desserts = myJson.categories.desserts;
 
 $(function () {
   // Same as document.addEventListener("DOMContentLoaded"...
@@ -70,81 +71,57 @@ $(function () {
     );
   });
 
-  // Fetch data from json file
-
-  // let dataGlobal;
-
-  // const getData = async () => {
-  //   const response = await fetch("./json/categories.json");
-  //   const data = await response.json();
-  //   dataGlobal = data;
-  //   return data;
-  // };
-  // (async () => {
-  //   await getData();
-  //   console.log(dataGlobal.categories);
-  // })();
-
-  // fetch("./json/categories.json")
-  //   .then((response) => response.json())
-  //   .then((data) => showInfo(data));
-
-  // function showInfo(data) {
-  //   let beverage = data.categories.beverages;
-  //   let snack = data.categories.snacks;
-  //   for (let i = 0; i < beverage.length; i++) {
-  //     console.table(beverage[i].name);
-  //   }
-  //   for (let j = 0; j < snack.length; j++) {
-  //     console.table(snack[j].name);
-  //   }
-  // }
   // Load the menu categories view
   dc.loadMenuBeverages = function () {
     showLoading("#main-content");
     document.querySelector(
       "#main-content"
     ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>`;
-    beverageCard();
-    function beverageCard() {
-      for (let i = 0; i < beverages.length; i++) {
-        console.log(beverages[i]);
-        document.querySelector("#menu-categories-title").insertAdjacentHTML =
-          `<div class="menu-item-tile col-md-6">
+
+    for (let i = 0; i <= beverages.length; i++) {
+      var shortName = beverages[i].short_name;
+      // var name = beverages[i].name;
+      // var name = beverages[i].name;
+      // var name = beverages[i].name;
+      beverageCard(shortName);
+    }
+
+    function beverageCard(shortName) {
+      document.querySelector("#menu-categories-title").insertAdjacentHTML =
+        `<div class="menu-item-tile col-md-6">
                 <div class="row">
                   <div class="col-sm-5">
                     <div class="menu-item-photo">
                       <div>` +
-          beverages[i].short_name +
-          `</div>
+        shortName +
+        `</div>
                       <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
                         alt="Item" />
                     </div>
                     <div class="menu-item-price">
                       ` +
-          beverages[i].price_small +
-          `<span> ` +
-          beverages[i].small_portion_name +
-          `</span>` +
-          beverages[i].price_large +
-          `
+        beverages[i].price_small +
+        `<span> ` +
+        beverages[i].small_portion_name +
+        `</span>` +
+        beverages[i].price_large +
+        `
                       <span>` +
-          beverages[i].large_portion_name +
-          `</span>
+        beverages[i].large_portion_name +
+        `</span>
                     </div>
                   </div>
                   <div class="menu-item-description col-sm-7">
                     <h3 class="menu-item-title">` +
-          beverages[i].name +
-          `</h3>
+        beverages[i].name +
+        `</h3>
                     <p class="menu-item-details">` +
-          beverages[i].description +
-          `</p>
+        beverages[i].description +
+        `</p>
                   </div>
                 </div>
                 <hr class="visible-xs" />
               </div>`;
-      }
     }
   };
 
