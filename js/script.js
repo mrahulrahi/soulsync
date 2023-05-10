@@ -89,15 +89,12 @@ $(function () {
             <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
               alt="Item" />
           </div>
-          <div class="menu-item-price">
+          <div class="menu-item-description">
             ${element.price_small}
             <span>${element.small_portion_name}</span>
             ${element.price_large} 
             <span>${element.large_portion_name} </span>
-          </div>
-          <div class="menu-item-description">
             <h3 class="menu-item-title">${element.name}</h3>
-            <p class="menu-item-details>${element.description} </p>
           </div>
           <hr class="visible-xs" />
         </div>`;
@@ -123,15 +120,12 @@ $(function () {
             <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
               alt="Item" />
           </div>
-          <div class="menu-item-price">
+          <div class="menu-item-description">
             ${element.price_small}
             <span>${element.small_portion_name}</span>
             ${element.price_large} 
             <span>${element.large_portion_name} </span>
-          </div>
-          <div class="menu-item-description">
             <h3 class="menu-item-title">${element.name}</h3>
-            <p class="menu-item-details>${element.description} </p>
           </div>
           <hr class="visible-xs" />
         </div>`;
@@ -158,15 +152,12 @@ $(function () {
             <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
               alt="Item" />
           </div>
-          <div class="menu-item-price">
+          <div class="menu-item-description">
             ${element.price_small}
             <span>${element.small_portion_name}</span>
             ${element.price_large} 
             <span>${element.large_portion_name} </span>
-          </div>
-          <div class="menu-item-description">
             <h3 class="menu-item-title">${element.name}</h3>
-            <p class="menu-item-details>${element.description} </p>
           </div>
           <hr class="visible-xs" />
         </div>`;

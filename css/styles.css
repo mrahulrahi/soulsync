@@ -195,8 +195,10 @@ body {
 }
 
 #cards {
+  padding: 0 5%;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -209,21 +211,12 @@ body {
   flex-direction: row;
   width: 300px;
   font-family: "Short Stack", cursive;
-  margin: 50px 0;
+  background-color: #551e19;
+  border-radius: 10px;
 }
 
 .menu-card hr {
   width: 80%;
-}
-
-.menu-card .menu-item-price {
-  font-size: 1.1em;
-  text-align: right;
-  background-color: #551e19;
-}
-
-.menu-card .menu-item-price span {
-  font-size: 0.6em;
 }
 
 .menu-item-photo {
@@ -233,6 +226,8 @@ body {
   overflow: hidden;
   padding: 0;
   margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .menu-item-photo div {
@@ -244,19 +239,21 @@ body {
   text-align: center;
 }
 
-.menu-item-description {
+.menu-card .menu-item-description {
   width: 100%;
-  background-color: #551e19;
+  font-size: 1.1em;
+  text-align: right;
+}
+
+.menu-card .menu-item-description span {
+  font-size: 0.6em;
 }
 
 h3.menu-item-title {
   margin: 0 0 10px;
 }
 
-.menu-item-details {
-  font-size: 0.9em;
-  font-style: italic;
-}
+
 
 /* END  MENU CATEGORIES PAGE */
 
