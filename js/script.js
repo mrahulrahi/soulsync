@@ -1,7 +1,7 @@
 import myJson from "../json/categories.json" assert { type: "json" };
-var beverages = myJson.categories.beverages;
-var snacks = myJson.categories.snacks;
-var desserts = myJson.categories.desserts;
+let beverages = myJson.categories.beverages;
+let snacks = myJson.categories.snacks;
+let desserts = myJson.categories.desserts;
 
 $(function () {
   // Same as document.addEventListener("DOMContentLoaded"...
@@ -83,60 +83,61 @@ $(function () {
     beverages.forEach((element) => {
       htmlCode =
         htmlCode +
-        `<div class="menu-item-tile col-md-6">
-                <div class="row">
-                  <div class="col-sm-5">
-                    <div class="menu-item-photo">
-                      <div>${element.short_name}</div>
-                      <img class="img-responsive" width="250" height="150" src="https://placehold.co/600x400/EEE/31343C"
-                        alt="Item" />
-                    </div>
-                    <div class="menu-item-price">
-                      ${element.smallPrice}
-                      <span>${element.smallName}</span>
-                      ${element.largePrice} 
-                      <span>${element.largeName} </span>
-                    </div>
-                  </div>
-                  <div class="menu-item-description col-sm-7">
-                    <h3 class="menu-item-title">${element.name}</h3>
-                    <p class="menu-item-details>${element.description} </p>
-                  </div>
-                </div>
-                <hr class="visible-xs" />
-              </div>`;
+        `<div class="menu-card">  
+          <div class="menu-item-photo">
+            <div>${element.short_name}</div>
+            <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
+              alt="Item" />
+          </div>
+          <div class="menu-item-price">
+            ${element.price_small}
+            <span>${element.small_portion_name}</span>
+            ${element.price_large} 
+            <span>${element.large_portion_name} </span>
+          </div>
+          <div class="menu-item-description">
+            <h3 class="menu-item-title">${element.name}</h3>
+            <p class="menu-item-details>${element.description} </p>
+          </div>
+          <hr class="visible-xs" />
+        </div>`;
     });
-    const beverageCard = document.querySelector("#cards");
-    beverageCard.innerHTML = htmlCode;
+    const beveragesCards = document.querySelector("#cards");
+    beveragesCards.innerHTML = htmlCode;
   };
 
   dc.loadMenuSnacks = function () {
     showLoading("#main-content");
-
     document.querySelector(
       "#main-content"
-    ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Snacks Menu</h2>    
-        
-        <div class="menu-item-tile col-md-6">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="menu-item-photo">
-                <div>{{short_name}}</div>
-                <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
-                  alt="Item" />
-              </div>
-              <div class="menu-item-price">
-                {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
-                <span>{{large_portion_name}}</span>
-              </div>
-            </div>
-            <div class="menu-item-description col-sm-7">
-              <h3 class="menu-item-title">{{name}}</h3>
-              <p class="menu-item-details">{{description}}</p>
-            </div>
+    ).innerHTML = `<h2 id="menu-categories-title" class="text-center">Snacks Menu</h2>`;
+
+    let htmlCode = ``;
+
+    snacks.forEach((element) => {
+      htmlCode =
+        htmlCode +
+        `<div class="menu-card">  
+          <div class="menu-item-photo">
+            <div>${element.short_name}</div>
+            <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
+              alt="Item" />
+          </div>
+          <div class="menu-item-price">
+            ${element.price_small}
+            <span>${element.small_portion_name}</span>
+            ${element.price_large} 
+            <span>${element.large_portion_name} </span>
+          </div>
+          <div class="menu-item-description">
+            <h3 class="menu-item-title">${element.name}</h3>
+            <p class="menu-item-details>${element.description} </p>
           </div>
           <hr class="visible-xs" />
         </div>`;
+    });
+    const snacksCards = document.querySelector("#cards");
+    snacksCards.innerHTML = htmlCode;
   };
 
   dc.loadMenuDesserts = function () {
@@ -144,28 +145,34 @@ $(function () {
 
     document.querySelector(
       "#main-content"
-    ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Desserts Menu</h2>    
-        
-        <div class="menu-item-tile col-md-6">
-          <div class="row">
-            <div class="col-sm-5">
-              <div class="menu-item-photo">
-                <div>{{short_name}}</div>
-                <img class="img-responsive" width="250" height="150" src="images/menu/{{catShortName}}/{{short_name}}.jpg"
-                  alt="Item" />
-              </div>
-              <div class="menu-item-price">
-                {{price_small}}<span> {{small_portion_name}}</span> {{price_large}}
-                <span>{{large_portion_name}}</span>
-              </div>
-            </div>
-            <div class="menu-item-description col-sm-7">
-              <h3 class="menu-item-title">{{name}}</h3>
-              <p class="menu-item-details">{{description}}</p>
-            </div>
+    ).innerHTML = `<h2 id="menu-categories-title" class="text-center">Desserts Menu</h2>`;
+
+    let htmlCode = ``;
+
+    desserts.forEach((element) => {
+      htmlCode =
+        htmlCode +
+        `<div class="menu-card">  
+          <div class="menu-item-photo">
+            <div>${element.short_name}</div>
+            <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
+              alt="Item" />
+          </div>
+          <div class="menu-item-price">
+            ${element.price_small}
+            <span>${element.small_portion_name}</span>
+            ${element.price_large} 
+            <span>${element.large_portion_name} </span>
+          </div>
+          <div class="menu-item-description">
+            <h3 class="menu-item-title">${element.name}</h3>
+            <p class="menu-item-details>${element.description} </p>
           </div>
           <hr class="visible-xs" />
         </div>`;
+    });
+    const dessertsCards = document.querySelector("#cards");
+    dessertsCards.innerHTML = htmlCode;
   };
 
   global.$dc = dc;
