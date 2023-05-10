@@ -105,7 +105,7 @@ body {
 /* HOME PAGE */
 
 .container .jumbotron {
-  box-shadow: 0 0 50px #3f0c1f;
+  box-shadow: 0 0 50px #551e19;
   background: url("../images/cafe-bg.jpg") no-repeat;
   background-position: center;
   border-radius: 10px;
@@ -202,7 +202,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 
 .menu-card {
@@ -215,19 +215,13 @@ body {
   border-radius: 10px;
 }
 
-.menu-card hr {
-  width: 80%;
-}
-
 .menu-item-photo {
-  width: max-content;
+  width: fit-content;
   position: relative;
-  border: 2px solid #3f0c1f;
+  border: 2px solid #e6b17e;
   overflow: hidden;
-  padding: 0;
-  margin-bottom: 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 .menu-item-photo div {
@@ -237,21 +231,31 @@ body {
   width: 80px;
   background-color: #557c3e;
   text-align: center;
+  border-top-left-radius: 5px;
 }
 
 .menu-card .menu-item-description {
   width: 100%;
-  font-size: 1.1em;
-  text-align: right;
+  font-size: 1.25em;
+  padding: 10px;
+  border: 1px solid #e6b17e;
+  border-radius: 5px;
+  margin: 10px;
+  color: wheat;
 }
 
-.menu-card .menu-item-description span {
-  font-size: 0.6em;
+.menu-card .menu-item-description .menu-item-price {
+  width: fit-content;
+  background-color: #557c3e;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-h3.menu-item-title {
-  margin: 0 0 10px;
+.menu-card .menu-item-description .menu-item-price span {
+  font-size: 0.75em;
 }
+
+
 
 
 
@@ -365,12 +369,8 @@ h3.menu-item-title {
     margin: 0 auto 15px;
   }
 
-  .menu-item-photo {
-    margin-right: auto;
-  }
-
-  .menu-card .menu-item-price {
-    text-align: center;
+  #menu-categories-title {
+    font-size: 10vw;
   }
 
   .menu-item-description {

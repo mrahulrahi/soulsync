@@ -90,13 +90,14 @@ $(function () {
               alt="Item" />
           </div>
           <div class="menu-item-description">
-            ${element.price_small}
-            <span>${element.small_portion_name}</span>
-            ${element.price_large} 
-            <span>${element.large_portion_name} </span>
+            <div class="menu-item-price">
+              ${element.price_small}
+              <span>${element.small_portion_name}</span>
+              ${element.price_large} 
+              <span>${element.large_portion_name} </span>    
+            </div>
             <h3 class="menu-item-title">${element.name}</h3>
           </div>
-          <hr class="visible-xs" />
         </div>`;
     });
     const beveragesCards = document.querySelector("#cards");
@@ -121,13 +122,14 @@ $(function () {
               alt="Item" />
           </div>
           <div class="menu-item-description">
-            ${element.price_small}
-            <span>${element.small_portion_name}</span>
-            ${element.price_large} 
-            <span>${element.large_portion_name} </span>
+            <div class="menu-item-price">
+              ${element.price_small}
+              <span>${element.small_portion_name}</span>
+              ${element.price_large} 
+              <span>${element.large_portion_name} </span>
+            </div>
             <h3 class="menu-item-title">${element.name}</h3>
           </div>
-          <hr class="visible-xs" />
         </div>`;
     });
     const snacksCards = document.querySelector("#cards");
@@ -153,13 +155,15 @@ $(function () {
               alt="Item" />
           </div>
           <div class="menu-item-description">
-            ${element.price_small}
-            <span>${element.small_portion_name}</span>
-            ${element.price_large} 
-            <span>${element.large_portion_name} </span>
+            <div class="menu-item-price">
+              ${element.price_small}
+              <span>${element.small_portion_name}</span>
+              ${element.price_large} 
+              <span>${element.large_portion_name} </span>  
+            </div>
             <h3 class="menu-item-title">${element.name}</h3>
           </div>
-          <hr class="visible-xs" />
+          
         </div>`;
     });
     const dessertsCards = document.querySelector("#cards");
