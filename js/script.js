@@ -78,16 +78,46 @@ $(function () {
       "#main-content"
     ).innerHTML = `<h2 id="menu-categories-title" class="text-center"> Beverages Menu</h2>`;
 
-    for (let i = 0; i <= beverages.length; i++) {
+    for (var i = 0; i <= beverages.length; i++) {
       var shortName = beverages[i].short_name;
-      // var name = beverages[i].name;
-      // var name = beverages[i].name;
-      // var name = beverages[i].name;
-      beverageCard(shortName);
+      var name = beverages[i].name;
+      var smallPrice = beverages[i].price_small;
+      var smallName = beverages[i].small_portion_name;
+      var largePrice = beverages[i].price_large;
+      var largeName = beverages[i].large_portion_name;
+      var description = beverages[i].description;
+      var beverageCard = beverageCard(
+        shortName,
+        name,
+        smallPrice,
+        smallName,
+        largePrice,
+        largeName,
+        description
+      );
+
+      beverageCard += beverageCard;
+      console.log(
+        shortName,
+        name,
+        smallPrice,
+        smallName,
+        largePrice,
+        largeName,
+        description
+      );
     }
 
-    function beverageCard(shortName) {
-      document.querySelector("#menu-categories-title").insertAdjacentHTML =
+    function beverageCard(
+      shortName,
+      name,
+      smallPrice,
+      smallName,
+      largePrice,
+      largeName,
+      description
+    ) {
+      document.querySelector("#main-content").appendChild =
         `<div class="menu-item-tile col-md-6">
                 <div class="row">
                   <div class="col-sm-5">
@@ -100,23 +130,23 @@ $(function () {
                     </div>
                     <div class="menu-item-price">
                       ` +
-        beverages[i].price_small +
+        smallPrice +
         `<span> ` +
-        beverages[i].small_portion_name +
+        smallName +
         `</span>` +
-        beverages[i].price_large +
+        largePrice +
         `
                       <span>` +
-        beverages[i].large_portion_name +
+        largeName +
         `</span>
                     </div>
                   </div>
                   <div class="menu-item-description col-sm-7">
                     <h3 class="menu-item-title">` +
-        beverages[i].name +
+        name +
         `</h3>
                     <p class="menu-item-details">` +
-        beverages[i].description +
+        description +
         `</p>
                   </div>
                 </div>
