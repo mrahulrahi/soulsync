@@ -52,7 +52,7 @@
     {
         "id": 882,
         "short_name": "A6",
-        "name": "Chicken Noodle (or Rice) Soup",
+        "name": "Chicken Noodle Soup",
         "description": "clear broth and lo mein noodles or white rice, chicken pieces",
         "price_small": 2.55,
         "price_large": 5.0,
@@ -103,7 +103,7 @@
 "snacks" :[{
     "id": 887,
     "short_name": "A11",
-    "name": "Young Chow Won Ton Soup (for 2)",
+    "name": "Young Chow Won Ton Soup",
     "description": "clear chicken broth with vegetables, veal, chicken, and beef and won tons",
     "price_small": null,
     "price_large": 11.95,
@@ -123,7 +123,7 @@
 {
     "id": 889,
     "short_name": "B2",
-    "name": "Spring Roll (1)",
+    "name": "Spring Roll",
     "description": "thin wraps with white meat and cabbage",
     "price_small": null,
     "price_large": 3.0,
@@ -133,7 +133,7 @@
 {
     "id": 890,
     "short_name": "B3",
-    "name": "Vegetable Egg Roll (1)",
+    "name": "Vegetable Egg Roll",
     "description": "cabbage and carrots in eggroll wrappers",
     "price_small": null,
     "price_large": 2.25,
@@ -143,7 +143,7 @@
 {
     "id": 891,
     "short_name": "B4",
-    "name": "Fried Won Ton with Chicken Meat (6)",
+    "name": "Fried Won Ton with Chicken Meat",
     "description": "triangle shaped won ton with ground white meat chicken inside",
     "price_small": null,
     "price_large": 6.25,
@@ -153,7 +153,7 @@
 {
     "id": 892,
     "short_name": "B5",
-    "name": "Chicken Toast (4)",
+    "name": "Chicken Toast",
     "description": "ground chicken meat on bread, deep-fried, comes with 4 pieces",
     "price_small": null,
     "price_large": 6.25,
@@ -183,7 +183,7 @@
 {
     "id": 895,
     "short_name": "B8",
-    "name": "Steamed (or Pan Fried) Chicken Dumplings (6)",
+    "name": "Steamed Chicken Dumplings",
     "description": "house-made dough dumpling with chicken",
     "price_small": null,
     "price_large": 7.95,
@@ -193,7 +193,7 @@
 {
     "id": 896,
     "short_name": "B9",
-    "name": "Steamed (or Pan Fried) Vegetable Dumplings (6)",
+    "name": "Steamed Vegetable Dumplings",
     "description": "house-made dough dumpling with carrot, mushroom, cellophane noodles, cabbage (6 pieces)",
     "price_small": null,
     "price_large": 7.95,
@@ -204,7 +204,7 @@
 "desserts" :[{
     "id": 897,
     "short_name": "B10",
-    "name": "Szechuan Soft Won Ton (8)",
+    "name": "Szechuan Soft Won Ton",
     "description": "soft won tons filled with chicken, with garlic sauce",
     "price_small": null,
     "price_large": 8.55,
@@ -224,7 +224,7 @@
 {
     "id": 899,
     "short_name": "B12",
-    "name": "Teriyaki Beef (6)",
+    "name": "Teriyaki Beef",
     "description": "6 pieces of beef on skewers with teriyaki sauce",
     "price_small": null,
     "price_large": 7.95,
@@ -234,7 +234,7 @@
 {
     "id": 900,
     "short_name": "B13",
-    "name": "Fried Chicken Wing (6)",
+    "name": "Fried Chicken Wing",
     "description": "6 pieces of curry-flavored chicken wings",
     "price_small": null,
     "price_large": 4.95,
@@ -254,7 +254,7 @@
 {
     "id": 902,
     "short_name": "B15",
-    "name": "Pu Pu Platter (for 2)",
+    "name": "Pu Pu Platter",
     "description": "2 spring egg rolls, 2 fried won tons, 2 BBQ ribs, 2 chicken toast, 2 teriyaki beef",
     "price_small": null,
     "price_large": 18.95,
