@@ -218,7 +218,6 @@ body {
 .menu-item-photo {
   width: fit-content;
   position: relative;
-  border: 2px solid #e6b17e;
   overflow: hidden;
   border-radius: 5px;
   margin: 10px;
@@ -238,15 +237,15 @@ body {
   width: 100%;
   font-size: 1.25em;
   padding: 10px;
-  border: 1px solid #e6b17e;
+  background-color: wheat;
   border-radius: 5px;
   margin: 10px;
-  color: wheat;
+  color: #551e19;
 }
 
 .menu-card .menu-item-description .menu-item-price {
   width: fit-content;
-  background-color: #557c3e;
+  background-color: #e6b17e;
   padding: 5px 10px;
   border-radius: 5px;
 }
