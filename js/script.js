@@ -1,7 +1,6 @@
 import myJson from "../json/categories.json" assert { type: "json" };
-let beverages = myJson.categories.beverages;
-let snacks = myJson.categories.snacks;
-let desserts = myJson.categories.desserts;
+let menu = myJson.menu;
+console.log(menu);
 
 $(function () {
   // Same as document.addEventListener("DOMContentLoaded"...
@@ -72,96 +71,35 @@ $(function () {
   });
 
   // Load the menu categories view
-  dc.loadMenuBeverages = function () {
+  dc.loadMenu = function () {
     showLoading("#main-content");
     document.querySelector(
       "#main-content"
-    ).innerHTML = `<h2 id="menu-categories-title" class="text-center">Beverages Menu</h2>`;
+    ).innerHTML = `<h2 id="menu-categories-title" class="text-center">Cafe Menu</h2>`;
 
     let htmlCode = ``;
-
-    beverages.forEach((element) => {
+    menu.forEach((element) => {
       htmlCode =
         htmlCode +
         `<div class="menu-card">  
           <div class="menu-item-photo">
             <div>${element.short_name}</div>
-            <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
+            <img class="img-responsive" src="https://s1.1zoom.me/prev/500/499725.jpg"
               alt="Item" />
           </div>
           <div class="menu-item-description">
             <div class="menu-item-info">
-              <span><i class="fa-solid fa-indian-rupee-sign"></i> ${element.price}</span> 
+              <span><i class="fa-solid fa-indian-rupee-sign"></i> ${
+                element.price * 30
+              }</span> 
               <h3 class="menu-item-title">${element.name}</h3>   
             </div>
             <p>${element.description}</p>
           </div>
         </div>`;
     });
-    const beveragesCards = document.querySelector("#cards");
-    beveragesCards.innerHTML = htmlCode;
+    const menuCards = document.querySelector("#cards");
+    menuCards.innerHTML = htmlCode;
   };
-
-  dc.loadMenuSnacks = function () {
-    showLoading("#main-content");
-    document.querySelector(
-      "#main-content"
-    ).innerHTML = `<h2 id="menu-categories-title" class="text-center">Snacks Menu</h2>`;
-
-    let htmlCode = ``;
-
-    snacks.forEach((element) => {
-      htmlCode =
-        htmlCode +
-        `<div class="menu-card">  
-          <div class="menu-item-photo">
-            <div>${element.short_name}</div>
-            <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
-              alt="Item" />
-          </div>
-          <div class="menu-item-description">
-            <div class="menu-item-info">
-            <span><i class="fa-solid fa-indian-rupee-sign"></i> ${element.price}</span> 
-            <h3 class="menu-item-title">${element.name}</h3>
-            </div>
-            <p>${element.description}</p>
-          </div>
-        </div>`;
-    });
-    const snacksCards = document.querySelector("#cards");
-    snacksCards.innerHTML = htmlCode;
-  };
-
-  dc.loadMenuDesserts = function () {
-    showLoading("#main-content");
-
-    document.querySelector(
-      "#main-content"
-    ).innerHTML = `<h2 id="menu-categories-title" class="text-center">Desserts Menu</h2>`;
-
-    let htmlCode = ``;
-
-    desserts.forEach((element) => {
-      htmlCode =
-        htmlCode +
-        `<div class="menu-card">  
-          <div class="menu-item-photo">
-            <div>${element.short_name}</div>
-            <img class="img-responsive" src="https://placehold.co/600x400/EEE/31343C"
-              alt="Item" />
-          </div>
-          <div class="menu-item-description">
-            <div class="menu-item-info">
-              <span><i class="fa-solid fa-indian-rupee-sign"></i> ${element.price}</span> 
-              <h3 class="menu-item-title">${element.name}</h3>   
-            </div>
-            <p>${element.description}</p>
-          </div>  
-        </div>`;
-    });
-    const dessertsCards = document.querySelector("#cards");
-    dessertsCards.innerHTML = htmlCode;
-  };
-
   global.$dc = dc;
 })(window);
