@@ -91,7 +91,6 @@ $(function () {
           </div>
           <div class="menu-item-description">
             <div class="menu-item-info">
-              
               <span><i class="fa-solid fa-indian-rupee-sign"></i> ${element.price}</span> 
               <h3 class="menu-item-title">${element.name}</h3>   
             </div>
@@ -122,9 +121,8 @@ $(function () {
           </div>
           <div class="menu-item-description">
             <div class="menu-item-info">
-              $
-              <span>${element.price}</span> 
-              <h3 class="menu-item-title">${element.name}</h3>   
+            <span><i class="fa-solid fa-indian-rupee-sign"></i> ${element.price}</span> 
+            <h3 class="menu-item-title">${element.name}</h3>
             </div>
             <p>${element.description}</p>
           </div>
@@ -154,8 +152,7 @@ $(function () {
           </div>
           <div class="menu-item-description">
             <div class="menu-item-info">
-              $
-              <span>${element.price}</span> 
+              <span><i class="fa-solid fa-indian-rupee-sign"></i> ${element.price}</span> 
               <h3 class="menu-item-title">${element.name}</h3>   
             </div>
             <p>${element.description}</p>
