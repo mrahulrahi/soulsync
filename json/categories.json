@@ -4,30 +4,22 @@
         "short_name": "A1",
         "name": "Won Ton Soup with Chicken",
         "description": "chicken-stuffed won tons in clear chicken broth with white meat chicken pieces and a few scallions",
-        "price_small": 2.55,
-        "price_large": 5.0,
-        "small_portion_name": "pint",
-        "large_portion_name": "quart"
+        "price": 5.0
     },
     {
         "id": 878,
         "short_name": "A2",
         "name": "Egg Drop Soup",
         "description": "chicken broth with egg drop",
-        "price_small": 2.25,
-        "price_large": 4.5,
-        "small_portion_name": "pint",
-        "large_portion_name": "quart"
+        "price": 4.5
+        
     },
     {
         "id": 879,
         "short_name": "A3",
         "name": "Chicken Corn Soup",
         "description": "clear chicken broth with creamy corn and egg drop with white meat chicken pieces",
-        "price_small": 2.75,
-        "price_large": 5.5,
-        "small_portion_name": "pint",
-        "large_portion_name": "quart"
+        "price": 5.5
     },
     {
         "id": 880,

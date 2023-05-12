@@ -90,13 +90,12 @@ $(function () {
               alt="Item" />
           </div>
           <div class="menu-item-description">
-            <div class="menu-item-price">
-              ${element.price_small}
-              <span>${element.small_portion_name}</span>
-              ${element.price_large} 
-              <span>${element.large_portion_name} </span>    
+            <div class="menu-item-info">
+              
+              <span><i class="fa-solid fa-indian-rupee-sign"></i> ${element.price}</span> 
+              <h3 class="menu-item-title">${element.name}</h3>   
             </div>
-            <h3 class="menu-item-title">${element.name}</h3>
+            <p>${element.description}</p>
           </div>
         </div>`;
     });
@@ -122,13 +121,12 @@ $(function () {
               alt="Item" />
           </div>
           <div class="menu-item-description">
-            <div class="menu-item-price">
-              ${element.price_small}
-              <span>${element.small_portion_name}</span>
-              ${element.price_large} 
-              <span>${element.large_portion_name} </span>
+            <div class="menu-item-info">
+              $
+              <span>${element.price}</span> 
+              <h3 class="menu-item-title">${element.name}</h3>   
             </div>
-            <h3 class="menu-item-title">${element.name}</h3>
+            <p>${element.description}</p>
           </div>
         </div>`;
     });
@@ -155,15 +153,13 @@ $(function () {
               alt="Item" />
           </div>
           <div class="menu-item-description">
-            <div class="menu-item-price">
-              ${element.price_small}
-              <span>${element.small_portion_name}</span>
-              ${element.price_large} 
-              <span>${element.large_portion_name} </span>  
+            <div class="menu-item-info">
+              $
+              <span>${element.price}</span> 
+              <h3 class="menu-item-title">${element.name}</h3>   
             </div>
-            <h3 class="menu-item-title">${element.name}</h3>
-          </div>
-          
+            <p>${element.description}</p>
+          </div>  
         </div>`;
     });
     const dessertsCards = document.querySelector("#cards");

@@ -243,17 +243,28 @@ body {
   color: #551e19;
 }
 
-.menu-card .menu-item-description .menu-item-price {
-  width: fit-content;
+.menu-card .menu-item-description .menu-item-info {
   background-color: #e6b17e;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-card .menu-item-description .menu-item-info span {
+  background-color: #557c3e;
+  color: #e6b17e;
+  font-size: 0.75em;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
-.menu-card .menu-item-description .menu-item-price span {
-  font-size: 0.75em;
+.menu-card .menu-item-title {
+  font-size: 1em;
+  display: inline;
 }
 
+.menu-card p {
+  font-size: .75em;
+}
 
 
 
