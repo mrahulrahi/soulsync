@@ -7,7 +7,7 @@ $(function () {
 
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
   $("#navbarToggle").blur(function (event) {
-    var screenWidth = window.innerWidth;
+    let screenWidth = window.innerWidth;
     if (screenWidth < 768) {
       $("#collapsable-nav").collapse("hide");
     }
@@ -25,27 +25,27 @@ $(function () {
 });
 
 (function (global) {
-  var dc = {};
-  var homeHtml = "snippets/home-snippet.html";
+  let dc = {};
+  let homeHtml = "snippets/home-snippet.html";
 
   // Convenience function for inserting innerHTML for 'select'
-  var insertHtml = function (selector, html) {
-    var targetElem = document.querySelector(selector);
+  let insertHtml = function (selector, html) {
+    let targetElem = document.querySelector(selector);
     targetElem.innerHTML = html;
   };
 
   // Show loading icon inside element identified by 'selector'.
-  var showLoading = function (selector) {
-    var html = "<div class='text-center'>";
+  let showLoading = function (selector) {
+    let html = "<div class='text-center'>";
     html +=
-      "<img class='loading-img blend' src='images/ajax-loader.gif'></div>";
+      "<img class='loading-img blend' src='../images/ajax-loader.gif' alt=''></div>";
     insertHtml(selector, html);
   };
 
   // Remove the class 'active' from home and switch to Menu button
-  var switchMenuToActive = function () {
+  let switchMenuToActive = function () {
     // Remove 'active' from home button
-    var classes = document.querySelector("#navHomeButton").className;
+    let classes = document.querySelector("#navHomeButton").className;
     classes = classes.replace(new RegExp("active", "g"), "");
     document.querySelector("#navHomeButton").className = classes;
 
@@ -89,9 +89,7 @@ $(function () {
           </div>
           <div class="menu-item-description">
             <div class="menu-item-info">
-              <span><i class="fa-solid fa-indian-rupee-sign"></i> ${
-                element.price * 30
-              }</span> 
+              <span><i class="fa-solid fa-indian-rupee-sign"></i> ${element.price * 30}</span> 
               <h3 class="menu-item-title">${element.name}</h3>   
             </div>
             <p>${element.description}</p>
