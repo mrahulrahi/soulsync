@@ -11,7 +11,6 @@ body {
 /** HEADER **/
 #header-nav {
   background-color: wheat;
-  border-radius: 0;
   border: 0;
   margin: 10px 50px 50px;
   border-radius: 10px;
@@ -320,7 +319,7 @@ body {
   #logo-img {
     width: 250px;
     height: 75px;
-    margin: -5px 0px 0px;
+    margin: -5px 0 0;
   }
 
   #collapsable-nav a {
@@ -335,7 +334,7 @@ body {
   }
 
   .fas {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 1em;
   }
 
