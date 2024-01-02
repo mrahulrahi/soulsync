@@ -1,109 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cafe Shafe</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link href="assets/images/favicon.png" rel="icon" type="image/png">
+    
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Instagram UIX UIX Sharing Photos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Instagram UIX - Sharing Photos platform HTML Template">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/uikit.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <div class="navbar-brand">
-            <a href="index.html" class="pull-left">
-              <div id="logo-img"></div>
-            </a>
-          </div>
+<body class="bg-gray-100">
 
-          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+
+    <div id="wrapper" class="flex flex-col justify-between h-screen">
+
+        <!-- header-->
+        <div class="bg-white py-4 shadow dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto">
+
+
+                <div class="flex items-center lg:justify-between justify-around">
+
+                    <a href="trending.html">
+                        <img src="assets/images/logo.png" alt="" class="w-32">
+                    </a>
+
+                    <div class="capitalize flex font-semibold hidden lg:block my-2 space-x-3 text-center text-sm">
+                        <a href="form-login.html" class="py-3 px-4">Login</a>
+                        <a href="form-register.html" class="bg-pink-500 pink-500 px-6 py-3 rounded-md shadow text-white">Register</a>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs active">
-              <a href="index.html">
-                <i class="fas fa-home-alt"></i> Home</a>
-            </li>
-            <li id="navMenuButton">
-              <a href="#" onclick="$dc.loadMenu();">
-                <i class="fas fa-coffee"></i><br class="hidden-xs" />
-                Beverages</a>
-            </li>
-            <li>
-              <a href="#" onclick="$dc.loadMenu();">
-                <i class="fas fa-pizza-slice"></i><br class="hidden-xs" />
-                Snacks</a>
-            </li>
-            <li>
-              <a href="#" onclick="$dc.loadMenu();">
-                <i class="fas fa-cheese"></i><br class="hidden-xs" />
-                Desserts</a>
-            </li>
+        <!-- Content-->
 
-          </ul>
-          <!-- #nav-list -->
+        <div>
+            <div class="lg:p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
+                <h1 class="lg:text-3xl text-xl font-semibold mb-6"> Sign in</h1>
+                <p class="mb-2 text-black text-lg"> Register to manage your account </p>
+                <form action="#">
+                    <div class="flex lg:flex-row flex-col lg:space-x-2">
+                        <input type="text" placeholder="First Name"  class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                        <input type="text" placeholder="Last Name" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    </div>
+                    <input type="text" placeholder="Email" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    <input type="text" placeholder="Password" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    <input type="text" placeholder="Confirm Password" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+                    <div class="flex justify-start my-4 space-x-1">
+                        <div class="checkbox">
+                            <input type="checkbox" id="chekcbox1" checked>
+                            <label for="chekcbox1"><span class="checkbox-icon"></span> I Agree</label>
+                        </div>
+                        <a href="#"> Terms and Conditions</a>
+                    </div>
+                    <button type="submit" class="bg-gradient-to-br from-pink-500 py-3 rounded-md text-white text-xl to-red-400 w-full">Login</button>
+                    <div class="text-center mt-5 space-x-2">
+                        <p class="text-base"> Do you have an account? <a href="form-login.html"> Login </a></p>
+                    </div>
+                </form>
+            </div>
         </div>
-        <!-- .collapse .navbar-collapse -->
-      </div>
-      <!-- .container -->
-    </nav>
-    <!-- #header-nav -->
-  </header>
+        
+        <!-- Footer -->
 
-  <div id="main-content" class="container"></div>
-  <div id="cards" class="cards-container"></div>
+        <div class="lg:mb-5 py-3 uk-link-reset">
+            <div class="flex flex-col items-center justify-between lg:flex-row max-w-6xl mx-auto lg:space-y-0 space-y-3">
+                <div class="flex space-x-2 text-gray-700 uppercase">
+                    <a href="#"> About</a>
+                    <a href="#"> Help</a>
+                    <a href="#"> Terms</a>
+                    <a href="#"> Privacy</a>
+                </div>
+                <p class="capitalize"> © copyright 2023 by Instagram UIX</p>
+            </div>
+        </div>
 
-  <footer class="panel-footer">
-    <div class="container">
-      <div class="row">
-        <section id="timings" class="col-sm-8">
-          <span>Timings:</span><br />
-          Monday - Sunday : 11:00 AM - 10:00 PM
-          <p>
-            * Delivery area within 5-10 kms, with minimum order of ₹250 plus
-            ₹50 charge for all deliveries.
-          </p>
-        </section>
-        <hr class="hr-line visible-xs" />
-        <section id="testimonials" class="col-sm-4">
-          <p>
-            "The best restaurant I've been to! And that's saying a lot, since
-            I've been to many!"
-          </p>
-          <p>
-            "Amazing food! Great service! Couldn't ask for more! I'll be back
-            again and again!"
-          </p>
-        </section>
-        <hr class="hr-line visible-xs" />
-      </div>
-      <div class="text-center">
-
-        &copy; Copyright Cafe Shafe Coded ❤️ by
-        <a class="hover:text-violet-400 underline" href="https://github.com/mrahulrahi" rel="noopener"
-          target="_blank">mrahulrahi</a>.
-      </div>
     </div>
-  </footer>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
-  <script type="module" src="js/script.js"></script>
+    <script>
+        
+        (function (window, document, undefined) {
+            'use strict';
+            if (!('localStorage' in window)) return;
+            var nightMode = localStorage.getItem('gmtNightMode');
+            if (nightMode) {
+                document.documentElement.className += ' dark';
+            }
+        })(window, document);
+    
+    
+        (function (window, document, undefined) {
+    
+            'use strict';
+    
+            // Feature test
+            if (!('localStorage' in window)) return;
+    
+            // Get our newly insert toggle
+            var nightMode = document.querySelector('#night-mode');
+            if (!nightMode) return;
+    
+            // When clicked, toggle night mode on or off
+            nightMode.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.documentElement.classList.toggle('dark');
+                if (document.documentElement.classList.contains('dark')) {
+                    localStorage.setItem('gmtNightMode', true);
+                    return;
+                }
+                localStorage.removeItem('gmtNightMode');
+            }, false);
+    
+        })(window, document);
+    </script>
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="assets/js/tippy.all.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/uikit.js"></script>
+    <script src="assets/js/simplebar.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+    <script src="../../unpkg.com/ionicons%405.2.3/dist/ionicons.js"></script>
 </body>
+
+
 
 </html>
