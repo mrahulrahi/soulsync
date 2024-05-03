@@ -9,7 +9,7 @@ a:focus,input:focus,textarea:focus,*:focus{outline:0!important;}
 /* =================reset css ends here================= */
 /* =================core css starts here================= */
 body{font-family: var(--font-josefinSans);font-size:16px;line-height:1.6;font-weight:300;;color: inherit;background: var(--white);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale; }
-.container{width:100%;max-width:1320px;}
+.container{width:100%;max-width:1176px;}
 a,input,button{display:inline-block;text-decoration:none;color:inherit;outline:none;transition:all 0.2s ease-in;-webkit-transition:all 0.2s ease-in;}
 a img{border:0px none;}
 a:hover{outline:none;color:var(--green);text-decoration:none;}
@@ -34,9 +34,9 @@ strong{font-weight:700;}
 b{font-weight:400;}
 p:last-child{margin-bottom:0;}
 
-.btn {min-width: 90px;width: fit-content;border-radius: 80px;padding: 16px 20px;font-family: var(--font-jost);font-size: 14px;font-weight: 700;line-height: 1;box-shadow: none;position: relative;}
+.btn {min-width: 90px;width: fit-content;border-radius: 80px;padding: 14px 20px;font-family: var(--font-jost);font-size: 14px;font-weight: 600;line-height: 1;box-shadow: none;position: relative;}
 .btn-default,.btn-default:focus { color: var(--white);background-color: var(--pink);border: solid 1px var(--pink); }
-.btn-default:hover,.btn-default:active { color: var(--white)!important;background-color: var(--green)!important;border-color: var(--green)!important;}
+.btn-default:hover,.btn-default:active { color: var(--white)!important;background-color: var(--line)!important;border-color: var(--line)!important;}
 .btn-light,.btn-light:focus { color: var(--pink);background-color: var(--light-pink);border: solid 1px var(--light-pink); }
 .btn-light:hover,.btn-light:active { color: var(--white)!important;background-color: var(--line)!important;border-color: var(--line)!important;}
 .btn-icon{color: inherit;}
