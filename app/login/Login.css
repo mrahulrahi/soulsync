@@ -1,0 +1,11 @@
+.form-container{height: calc(100vh - 145px);}
+.form-box{font-family: var(--font-inter);font-size: 18px;font-weight: 400;line-height: 1.5;}
+.form-box h5{font-family: var(--font-jost);font-size: 30px;font-weight: 600;line-height: 1.2;margin-bottom: 24px;}
+
+input.form-control,input.form-control:focus {font-family: var(--font-jost);font-size: 15px;font-weight: 400;line-height: 1;padding: 12px 20px;color: #808080;border: 1px solid #d3d5d8;background: #e5e7eb;height: 48px;box-shadow: none;}
+input.form-check-input:checked{background-color: var(--pink);box-shadow: none;border: 0;}
+.form-check-label{font-family: var(--font-inter);font-size: 15px;font-weight: 500;line-height: 1.5;}
+.btn-link{font-family: var(--font-jost);font-size: 15px;font-weight: 400;line-height: 1.5;text-decoration: none;}
+
+.not-info{font-family: var(--font-inter);font-size: 16px;font-weight: 400;line-height: 1.5;}
+.not-info a.btn-link{font-family: var(--font-jost);font-size: 16px;font-weight: 400;line-height: 1.5;text-decoration: none;}
