@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <div className="d-flex align-items-center justify-content-between">
+                        <div className="d-flex flex-column flex-sm-row gap-3 align-items-center justify-content-between">
                             <div className="footer-nav-list d-flex gap-2">
                                 <div className="footer-nav-item">
                                     <Link className="footer-nav-link" href="#!"> About</Link>

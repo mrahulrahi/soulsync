@@ -9,13 +9,13 @@ const Header = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
-                            <div className="d-flex align-items-center justify-content-between">
-                                <div className="nav-brand">
-                                    <Image src="/images/logo.png" alt="logo" width={128} height={48} />
-                                </div>
-                                <div className="header-right">
-                                    <Link href="" className="btn btn-light">Login</Link>
-                                    <Link href="" className="btn btn-default">Register</Link>
+                            <div className="d-flex align-items-center justify-content-center justify-content-sm-between">
+                                <Link href="/" className="nav-brand">
+                                    <Image src="/images/logo.png" alt="logo" width={130} height={50}  quality={100} />
+                                </Link>
+                                <div className="header-right d-none d-sm-block">
+                                    <Link href="/login" className="btn btn-light">Login</Link>
+                                    <Link href="/register" className="btn btn-default">Register</Link>
                                 </div>
                             </div>
                         </div>

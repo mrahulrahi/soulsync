@@ -1,4 +1,4 @@
-import './Login.css'
+import '../Form.css'
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Link from 'next/link';
@@ -12,8 +12,8 @@ export default function LoginPage() {
       <div className="form-container d-flex align-items-center">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5 mx-auto">
-              <div className="form-box">
+            <div className="col-lg-12">
+              <div className="form-box mx-auto">
                 <h5>Log in</h5>
                 <p>Email or Username</p>
                 <div className="row g-2">
@@ -39,7 +39,7 @@ export default function LoginPage() {
                     <input type="submit" className="btn btn-default btn-block" value="Login" />
                   </div>
                   <div className="col-lg-12">
-                    <p className="not-info mt-3 text-center"> Not registered? <Link href="#!" className="btn-link"> Create a account </Link> </p>
+                    <p className="not-info mt-3 text-center"> Not registered? <Link href="/register" className="btn-link"> Create a account </Link> </p>
                   </div>
                 </div>
               </div>

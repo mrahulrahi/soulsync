@@ -1,4 +1,4 @@
-import './Register.css'
+import '../Form.css'
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Link from 'next/link';
@@ -12,8 +12,8 @@ export default function RegisterPage() {
       <div className="form-container d-flex align-items-center">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5 mx-auto">
-              <div className="form-box">
+            <div className="col-lg-12">
+              <div className="form-box mx-auto">
                 <h5>Sign in</h5>
                 <p>Register to manage your account</p>
                 <div className="row g-2">
@@ -48,7 +48,7 @@ export default function RegisterPage() {
                     <input type="submit" className="btn btn-default btn-block" value="Register" />
                   </div>
                   <div className="col-lg-12">
-                    <p className="not-info mt-3 text-center"> Do you have an account? <Link href="#!" className="btn-link"> Login </Link> </p>
+                    <p className="not-info mt-3 text-center"> Do you have an account? <Link href="/login" className="btn-link"> Login </Link> </p>
                   </div>
                 </div>
               </div>
