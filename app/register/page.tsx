@@ -17,10 +17,10 @@ export default function RegisterPage() {
                 <h5>Sign in</h5>
                 <p>Register to manage your account</p>
                 <div className="row g-2">
-                  <div className="col-lg-6">
+                  <div className="col-sm-6">
                     <input type="text" className="form-control" placeholder="First Name" />
                   </div>
-                  <div className="col-lg-6">
+                  <div className="col-sm-6">
                     <input type="text" className="form-control" placeholder="Last Name" />
                   </div>
                   <div className="col-lg-12">
