@@ -1,2 +1,6 @@
 aside{width: 300px;}
 .nav-head{height: 66px;padding: 0 15px;border-bottom: 1px solid #e5e7eb;}
+.nav-body{padding: 5px 12px;}
+.nav-body-top{padding: 24px 0;}
+.nbt-profile-img-box{background: linear-gradient(to top right, #d97706, #db2777);width: 96px;height: 96px;}
+.nbt-profile-img{border: 4px solid #fff;width: 88px;}
