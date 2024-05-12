@@ -8,7 +8,9 @@ ul{list-style:none;}
 a:focus,input:focus,textarea:focus,*:focus{outline:0!important;}
 /* =================reset css ends here================= */
 /* =================core css starts here================= */
-body{font-family: var(--font-josefinSans);font-size:16px;line-height:1.6;font-weight:300;;color: inherit;background: #f3f4f6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale; }
+html,body,main{height: 100%;}
+body>main{display: flex;flex-flow: column;}
+body{font-family: var(--font-josefinSans);font-size:16px;line-height:1.6;font-weight:300;;color: inherit;background: #f3f4f6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 .container{width:calc(100% - 24px);max-width:1176px;}
 a,input,button{display:inline-block;text-decoration:none;color:inherit;outline:none;transition:all 0.2s ease-in;-webkit-transition:all 0.2s ease-in;}
 a img{border:0px none;}

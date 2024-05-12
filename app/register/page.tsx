@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function RegisterPage() {
   return (
-    <main>
+    <>
       <Header />
       <div className="form-container d-flex align-items-center">
         <div className="container">
@@ -57,6 +57,6 @@ export default function RegisterPage() {
         </div>
       </div>
       <Footer />
-    </main>
+    </>
   );
 }

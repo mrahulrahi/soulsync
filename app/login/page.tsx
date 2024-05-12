@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function LoginPage() {
   return (
-    <main>
+    <>
       <Header />
       <div className="form-container d-flex align-items-center">
         <div className="container">
@@ -48,6 +48,6 @@ export default function LoginPage() {
         </div>
       </div>
       <Footer />
-    </main>
+    </>
   );
 }
