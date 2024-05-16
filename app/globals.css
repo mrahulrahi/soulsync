@@ -50,3 +50,5 @@ p:last-child{margin-bottom:0;}
 .bg-violet{background:var(--blue);color: var(--white);}
 .grey-bg{background: #f5f5f5;}
 /* =================core css ends here================= */
+
+.main-content{width: calc(100% - 300px);}
