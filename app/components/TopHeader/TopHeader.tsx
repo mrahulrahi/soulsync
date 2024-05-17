@@ -10,9 +10,17 @@ const Header = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="d-flex align-items-center justify-content-center justify-content-sm-between">
-                                <Link href="/" className="nav-brand">
-                                    <Image src="/images/logo.png" alt="logo" width={130} height={50} quality={100} />
-                                </Link>
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text" id="basic-addon1">
+                                        <div className="icon-search w-100 h-100">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                            </svg>
+                                        </div>
+                                    </span>
+                                    <input type="text" className="form-control" placeholder="Search.." aria-label="Username" aria-describedby="basic-addon1" />
+                                </div>
+
                                 <div className="header-right d-flex gap-2">
                                     <div className="dropdown">
                                         <a className="btn btn-default" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,8 +60,8 @@ const Header = () => {
                                         </ul>
                                     </div>
                                     <div className="dropdown">
-                                        <a className="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <Image src="/images/avatars/avatar-2.jpg" alt="logo" width={32} height={32} quality={100} />
+                                        <a className="avatar rounded-circle overflow-hidden" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <Image src="/images/avatars/avatar-2.jpg" alt="logo" width={32} height={32} quality={100} />
                                         </a>
 
                                         <ul className="dropdown-menu">
