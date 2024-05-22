@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Header = () => {
     return (
         <header>
-            <nav className="py-3">
+            <nav className="py-2">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -20,12 +20,13 @@ const Header = () => {
                                 </div>
 
                                 <div className="header-right d-flex gap-2">
-                                    <div className="dropdown">
+                                    <div className="dropdown upload-dropdown">
                                         <a className="btn btn-default" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Upload
                                         </a>
 
                                         <ul className="dropdown-menu">
+                                            <div className="upload-head"><h4>Upload Video</h4></div>
                                             <li><a className="dropdown-item" href="#">Action</a></li>
                                             <li><a className="dropdown-item" href="#">Another action</a></li>
                                             <li><a className="dropdown-item" href="#">Something else here</a></li>
@@ -63,9 +64,10 @@ const Header = () => {
                                         </a>
 
                                         <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="#">Action</a></li>
-                                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                            <li><a className="dropdown-item" href="#">Account setting</a></li>
+                                            <li><a className="dropdown-item" href="#">Payments</a></li>
+                                            <li><a className="dropdown-item" href="#">Help</a></li>
+                                            <li><a className="dropdown-item" href="#">Log Out</a></li>
                                         </ul>
                                     </div>
                                 </div>
