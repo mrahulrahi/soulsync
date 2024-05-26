@@ -1,5 +1,7 @@
 aside{width: 300px;}
 .nav-head{height: 66px;padding: 0 15px;border-bottom: 1px solid #e5e7eb;}
+.btn-night-mode{width: 35px;height: 35px;position: relative;background-color: #f0f2f5;border-radius: 100%;margin-left: auto;}
+
 .nav-body{padding: 5px 0;border-right: 1px solid #e5e7eb;height: calc(100vh - 66px);overflow-y: auto;}
 .nav-body-top{padding: 24px 12px;border-bottom: 1px solid #e5e7eb;}
 .nbt-profile-img-box{background: linear-gradient(to top right, #d97706, #db2777);width: 96px;height: 96px;}
