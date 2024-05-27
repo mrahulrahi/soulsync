@@ -19,7 +19,7 @@ const Sidebar = () => {
                                 <Image src="/images/avatars/avatar-2.jpg" alt="logo" fill className="w-100 h-100 object-fit-cover" />
                             </div>
                         </div>
-                        <div className="profile-name mt-3 text-center">Johnson Emma</div>
+                        <div className="profile-name text-center">Johnson Emma</div>
                         <ul className="profile-details d-flex justify-content-around mt-4 w-100">
                             <li>
                                 <h6>Post</h6>

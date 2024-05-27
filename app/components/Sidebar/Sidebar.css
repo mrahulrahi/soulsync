@@ -6,10 +6,10 @@ aside{width: 300px;}
 .nav-body-top{padding: 24px 12px;border-bottom: 1px solid #e5e7eb;}
 .nbt-profile-img-box{background: linear-gradient(to top right, #d97706, #db2777);width: 96px;height: 96px;}
 .nbt-profile-img{border: 4px solid #fff;width: 88px;}
-.profile-name{font-family: var(--font-jost);font-size: 20px;font-weight: 500;line-height: 1.4;color: #666;}
+.profile-name{font-family: var(--font-jost);font-size: 20px;font-weight: 500;line-height: 1.4;color: #666;margin-top: 20px;}
 
 .nav-body-bottom{padding: 0 12px;}
-.profile-details li{width: 33.33%;}
+.profile-details li{width: auto;}
 .profile-details{font-family: var(--font-jost);font-size: 15px;font-weight: 400;line-height: 1.2;text-align: center;color: #1f2937;}
 .profile-details h6{font-size: 15px;font-weight: 700;margin-bottom: 0;}
 
