@@ -19,7 +19,7 @@ const Header = () => {
                                     <input type="text" className="form-control" placeholder="Search.." aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
 
-                                <div className="header-right d-flex gap-2">
+                                <div className="header-right d-flex align-items-center gap-4">
                                     <div className="dropdown upload-dropdown">
                                         <a className="btn btn-default" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             Upload
@@ -69,9 +69,23 @@ const Header = () => {
                                         </a>
 
                                         <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="#">Action</a></li>
-                                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                                            <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                            <div className="notification-head">Messages</div>
+                                            <div className="notification-body">
+                                                <div className="notification-row">
+                                                    <a className="notification-box d-flex align-items-start" href="#">
+                                                        <div className="avatar rounded-circle overflow-hidden flex-shrink-0">
+                                                            <Image src="/images/avatars/avatar-2.jpg" alt="logo" width={32} height={32} quality={100} />
+                                                        </div>
+                                                        <div>
+                                                            <div className="d-flex justify-content-between"><strong>Adrian Mohani</strong>   <div className="notification-time"> 2 hours ago </div></div>
+                                                            <div> Lorem ipsum dolor cursus Adipiscing massa convallis </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div className="notification-footer">
+                                                <a href="#!" className="">See all</a>
+                                            </div>
                                         </ul>
                                     </div>
                                     <div className="dropdown">
