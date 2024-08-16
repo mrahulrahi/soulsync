@@ -10,7 +10,7 @@ const Header = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="d-flex align-items-center justify-content-center justify-content-sm-between">
-                                <div className="search-box-group mb-3">
+                                <div className="search-box-group">
                                     <span className="search-icon d-flex align-items-center justify-content-center" id="basic-addon1">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
