@@ -54,6 +54,7 @@ p:last-child{margin-bottom:0;}
 .main-content{width: calc(100% - 300px);}
 .main-wrapper{padding: 45px 0;}
 .main-head h2{font-size: 24px;font-weight: 800;}
+.body-sidebar{max-width: 335px;}
 
 *::-webkit-scrollbar {width: 10px;}
 *::-webkit-scrollbar-track {background-color: var(--white);border-radius: 100px;}

@@ -1,4 +1,5 @@
 import FollowBox from "./components/FollowBox/FollowBox";
+import LatestBox from "./components/LatestBox/LatestBox";
 import Sidebar from "./components/Sidebar/Sidebar";
 import TopHeader from "./components/TopHeader/TopHeader";
 
@@ -18,7 +19,11 @@ export default function Home() {
             <div className="main-head"><h2>Feed</h2></div>
             <div className="main-body d-flex justify-content-between gap-4">
               <div></div>
+              <div className="body-sidebar w-100 d-flex flex-column gap-4">
               <FollowBox />
+              <LatestBox />
+              </div>
+           
             </div>
      
           </div>
