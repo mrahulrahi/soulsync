@@ -5,3 +5,7 @@
 
 .latest-box-grid{display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 8px;}
 .latest-box-img{border-radius: 8px;overflow: hidden;}
+.latest-box-img:nth-child(1){height: 128px;}
+.latest-box-img:nth-child(2){height: 160px;}
+.latest-box-img:nth-child(3){height: 160px;}
+.latest-box-img:nth-child(4){height: 128px;}
