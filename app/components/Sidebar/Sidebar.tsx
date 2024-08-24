@@ -4,7 +4,7 @@ import './Sidebar.css'
 
 const Sidebar = () => {
     return (
-        <aside className="flex-shrink-0">
+        <aside className="flex-shrink-0 -100">
             <div>
                 <div className="nav-head d-flex align-items-center justify-content-between">
                     <Link href="/" className="nav-brand">
