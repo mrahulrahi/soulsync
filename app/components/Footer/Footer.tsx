@@ -22,7 +22,7 @@ const Footer = () => {
                                     <Link className="footer-nav-link" href="#!">Privacy</Link>
                                 </div>
                             </div>
-                            <div className="copyright"> &copy; Copyright 2023 by Instello</div>
+                            <div className="copyright"> &copy; Copyright 2024 by SoulSync</div>
                         </div>
                     </div>
                 </div>

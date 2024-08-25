@@ -5,7 +5,7 @@ const FollowBox = () => {
     <div className="follow-box overflow-hidden">
       <div className="follow-box-head d-flex justify-content-between">
         <h4>Who to follow</h4>
-        <a href="#!">Refresh</a>
+        <a href="#!" className="btn-link">Refresh</a>
       </div>
       <div className="follow-box-body">
         <div className="follow-box-row d-flex">

@@ -5,7 +5,7 @@ const LatestBox = () => {
     <div className="latest-box overflow-hidden">
       <div className="latest-box-head d-flex justify-content-between">
         <h4>Latest</h4>
-        <a href="#!">Sell all</a>
+        <a href="#!" className="btn-link">Sell all</a>
       </div>
       <div className="latest-box-body">
         <div className="latest-box-grid">

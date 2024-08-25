@@ -15,7 +15,7 @@ export default function Home() {
         <div className="main-wrapper">
           <div className="container">
             <div className="row">
-              <div className="col-lg-10 mx-auto">
+              <div className="col-xl-10 mx-auto">
                 <div className="main-head"><h2>Feed</h2></div>
                 <div className="main-body d-flex justify-content-between gap-4">
                   <div></div>

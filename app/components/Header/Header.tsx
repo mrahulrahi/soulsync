@@ -11,7 +11,7 @@ const Header = () => {
                         <div className="col-lg-12">
                             <div className="d-flex align-items-center justify-content-center justify-content-sm-between">
                                 <Link href="/" className="nav-brand">
-                                    <Image src="/images/logo.png" alt="logo" width={130} height={50}  quality={100} />
+                                    <Image src="/images/logo.svg" alt="logo" width={130} height={50}  quality={100} />
                                 </Link>
                                 <div className="header-right d-none d-sm-block">
                                     <Link href="/login" className="btn btn-light">Login</Link>
