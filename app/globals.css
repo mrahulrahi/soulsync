@@ -1,4 +1,7 @@
-:root{--white:#fff;--black:#000;--pink: #344E41;--light-pink: #d2e4d6;--card-bg: #14253d;--line: #2f415b;--light-gray: #d6e2f0;--grayish-blue: #7b879d;--dark-blue: #1f3251;--blue: #343e51;}
+:root{
+    --white:#fff;
+    --black:#000;
+    --pink: #344E41;--light-pink: #d2e4d6;--card-bg: #14253d;--line: #2f415b;--light-gray: #d6e2f0;--grayish-blue: #7b879d;--dark-blue: #1f3251;--blue: #343e51;}
 
 /* =================reset css starts here=================  */
 *{margin:0;padding:0;}
@@ -42,7 +45,7 @@ p:last-child{margin-bottom:0;}
 .btn-light,.btn-light:focus { color: var(--pink);background-color: var(--light-pink);border: solid 1px var(--light-pink); }
 .btn-light:hover,.btn-light:active { color: var(--white)!important;background-color: var(--line)!important;border-color: var(--line)!important;}
 .btn-icon{color: inherit;}
-.btn-link{color: #6fbb58;text-decoration: none;}
+.btn-link{color: #6fbb58;text-decoration: n;}
 
 .btn.btn-block{min-width: 100%;}
 .btn+.btn {margin-left: 20px;}
