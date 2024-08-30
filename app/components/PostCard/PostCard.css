@@ -1,0 +1,44 @@
+.bg-gradient {
+    background: linear-gradient(135deg, #fbbf24 0%, #f472b6 100%);
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.text-dark {
+    color: #343a40 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.border-light {
+    border-color: #e9ecef !important;
+}
+
+.border-dark {
+    border-color: #343a40 !important;
+}
+
+.input-group-append .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
