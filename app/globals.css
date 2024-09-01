@@ -55,7 +55,6 @@ p:last-child{margin-bottom:0;}
 .btn-link{color: #6fbb58;text-decoration: n;}
 
 .btn.btn-block{min-width: 100%;}
-.btn+.btn {margin-left: 20px;}
 .bottom-btn-box{margin-top: 40px;}
 
 .bg-violet{background:var(--blue);color: var(--white);}
@@ -65,10 +64,17 @@ p:last-child{margin-bottom:0;}
 .main-content{width: calc(100% - 300px);}
 .main-wrapper{padding: 45px 0;overflow-y: auto;height: calc(100% - 66px);}
 .main-head h2{font-size: 24px;font-weight: 800;}
-.body-sidebar{max-width: 335px;}
+.body-content{width: calc(100% - 359px);}
+.body-sidebar{width: 335px;}
 
 *::-webkit-scrollbar {width: 10px;}
 *::-webkit-scrollbar-track {background-color: var(--white);border-radius: 100px;}
 *::-webkit-scrollbar-thumb {background: linear-gradient(to top right, #6fbb58, #344E41);border-radius: 100px;border: 3px solid var(--white);}
 
 body.dark-mode{background: #08090f;color: var(--white);}
+
+
+@media (max-width: 767.98px) {
+  .body-content{width: 100%;}
+    .body-sidebar{width: 100%;}
+}

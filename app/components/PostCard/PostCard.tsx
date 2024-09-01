@@ -1,11 +1,12 @@
 import React from 'react'
 import './PostCard.css'
+import { FaRegImage, FaVideo } from "react-icons/fa6";
 
 const PostCard = () => {
   return (
 
     
-        <div className="container mt-4">
+        <div className="mt-4">
             <div className="card shadow-sm rounded border-0 bg-white">
               
                 <div className="card-header d-flex justify-content-between align-items-center bg-white">
@@ -74,9 +75,9 @@ const PostCard = () => {
                     </div>
                     <div className="input-group mt-3">
                         <input type="text" className="form-control" placeholder="Add your Comment..." />
-                        <div className="input-group-append">
-                            <a className="btn btn-outline-secondary" href="#"><i className="fas fa-image"></i></a>
-                            <a className="btn btn-outline-secondary" href="#"><i className="fas fa-video"></i></a>
+                        <div className="input-group-append d-flex gap-3">
+                            <a className="" href="#"><FaRegImage /></a>
+                            <a className="" href="#"><FaVideo /></a>
                         </div>
                     </div>
                 </div>
