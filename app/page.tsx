@@ -20,8 +20,21 @@ export default function Home() {
                 <div className="main-body d-flex flex-wrap justify-content-between gap-4">
                   <div className="body-content flex-grow-1">
                     <div className="main-head"><h2>Feed</h2></div>
-                    
-                    <PostCard />
+
+                    <PostCard singlePost={true} />
+                    <PostCard singlePost={false} />
+
+                    <div className="flex justify-center mt-6" id="toggle">
+                      <a
+                        href="#"
+                        className="bg-white dark:bg-gray-900 font-semibold my-3 px-6 py-2 rounded-full shadow-md dark:bg-gray-800 dark:text-white"
+                        data-bs-toggle="tooltip" // Optional for Bootstrap tooltips
+                        data-bs-placement="top"
+                        title="Click to load more"
+                      >
+                        Load more ..
+                      </a>
+                    </div>
                   </div>
                   <div className="body-sidebar flex-shrink-0 d-flex flex-column gap-4">
                     <FollowBox />
