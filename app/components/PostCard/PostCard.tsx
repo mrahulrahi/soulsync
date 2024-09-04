@@ -54,21 +54,21 @@ const PostCard: React.FC<PostCardProps> = ({ singlePost }) => {
                             </a>
                         </div>
                         <div className="d-flex align-items-center mb-3">
-                            <img src="/images/avatars/avatar-1.jpg" className="rounded-circle border border-white" alt="Avatar" width="30" />
-                            <img src="/images/avatars/avatar-4.jpg" className="rounded-circle border border-white ml-n2" alt="Avatar" width="30" />
-                            <img src="/images/avatars/avatar-2.jpg" className="rounded-circle border border-white ml-n2" alt="Avatar" width="30" />
+                            <img src="/images/avatars/avatar-1.jpg" className="w-6 rounded-circle border border-white" alt="Avatar" width="30" />
+                            <img src="/images/avatars/avatar-4.jpg" className="w-6 rounded-circle border border-white" alt="Avatar" width="30" />
+                            <img src="/images/avatars/avatar-2.jpg" className="w-6 rounded-circle border border-white" alt="Avatar" width="30" />
                             <span className="ml-2">Liked <strong>Johnson</strong> and <strong>209 Others</strong></span>
                         </div>
                         <div className="border-top pt-3">
                             <div className="d-flex mb-3">
-                                <img src="/images/avatars/avatar-1.jpg" className="rounded-circle border border-white" alt="Avatar" width="40" />
+                                <img src="/images/avatars/avatar-1.jpg" className="w-10 radio ratio-1x1 rounded-circle border border-white" alt="Avatar" width="40" />
                                 <div className="bg-light text-dark p-2 rounded ml-2 flex-grow-1 position-relative">
                                     <p>In ut odio libero vulputate <i className="fas fa-heart"></i> <i className="fas fa-grin-tongue-wink"></i></p>
                                     <div className="position-absolute top-0 start-0 w-2 h-2 bg-light transform rotate-45"></div>
                                 </div>
                             </div>
                             <div className="d-flex">
-                                <img src="/images/avatars/avatar-1.jpg" className="rounded-circle border border-white" alt="Avatar" width="40" />
+                                <img src="/images/avatars/avatar-1.jpg" className="w-10 radio ratio-1x1 rounded-circle border border-white" alt="Avatar" width="40" />
                                 <div className="bg-light text-dark p-2 rounded ml-2 flex-grow-1 position-relative">
                                     <p>Nam liber tempor cum soluta nobis eleifend option <i className="fas fa-grin-tongue-wink-alt"></i></p>
                                     <div className="position-absolute top-0 start-0 w-2 h-2 bg-light transform rotate-45"></div>

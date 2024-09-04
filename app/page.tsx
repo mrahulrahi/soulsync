@@ -27,7 +27,7 @@ export default function Home() {
                     <div className="flex justify-center mt-6" id="toggle">
                       <a
                         href="#"
-                        className="bg-white dark:bg-gray-900 font-semibold my-3 px-6 py-2 rounded-full shadow-md dark:bg-gray-800 dark:text-white"
+                        className="bg-white btn btn-outline font-semibold my-3 px-6 py-2 rounded-pill shadow-md"
                         data-bs-toggle="tooltip" // Optional for Bootstrap tooltips
                         data-bs-placement="top"
                         title="Click to load more"
