@@ -1,8 +1,9 @@
 import React from 'react';
 import './PostCard.css';
 import Image from 'next/image';
-import { FaEllipsis, FaRegImage, FaVideo, FaShareNodes } from "react-icons/fa6";
+import { FaEllipsis, FaRegImage, FaVideo, FaShareNodes, FaRegHeart, FaRegComment, FaCommentSlash, FaRegStar, FaTrashCan } from "react-icons/fa6";
 import Link from 'next/link';
+import { FaRegEdit } from 'react-icons/fa';
 
 interface PostCardProps {
     singlePost: boolean;
@@ -10,7 +11,7 @@ interface PostCardProps {
 
 const PostCard: React.FC<PostCardProps> = ({ singlePost }) => {
     return (
-        <div className="mt-5">
+        <div className="mt-5 mx-auto">
             <div className="post-card shadow-sm rounded border-0 bg-white">
                 <div className="post-card-header d-flex justify-content-between align-items-center bg-white">
                     <div className="d-flex align-items-center">
@@ -27,11 +28,11 @@ const PostCard: React.FC<PostCardProps> = ({ singlePost }) => {
                         </button>
                         <div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                             <a className="dropdown-item" href="#"><FaShareNodes /> Share</a>
-                            <a className="dropdown-item" href="#"><i className="fas fa-edit mr-2"></i> Edit Post</a>
-                            <a className="dropdown-item" href="#"><i className="fas fa-comment-slash mr-2"></i> Disable comments</a>
-                            <a className="dropdown-item" href="#"><i className="fas fa-heart mr-2"></i> Add favorites</a>
+                            <a className="dropdown-item" href="#"><FaRegEdit /> Edit Post</a>
+                            <a className="dropdown-item" href="#"><FaCommentSlash /> Disable comments</a>
+                            <a className="dropdown-item" href="#"><FaRegStar /> Add favorites</a>
                             <div className="dropdown-divider"></div>
-                            <a className="dropdown-item text-danger" href="#"><i className="fas fa-trash-alt mr-2"></i> Delete</a>
+                            <a className="dropdown-item text-danger" href="#"><FaTrashCan /> Delete</a>
                         </div>
                     </div>
                 </div>
@@ -82,13 +83,13 @@ const PostCard: React.FC<PostCardProps> = ({ singlePost }) => {
                 <div className="post-card-footer">
                     <div className="d-flex justify-content-between mb-3">
                         <a href="#" className="d-flex align-items-center">
-                            <i className="fas fa-thumbs-up mr-2"></i> Like
+                        <FaRegHeart /> Like
                         </a>
                         <a href="#" className="d-flex align-items-center">
-                            <i className="fas fa-comment mr-2"></i> Comment
+                        <FaRegComment /> Comment
                         </a>
                         <a href="#" className="d-flex align-items-center ml-auto">
-                            <i className="fas fa-share mr-2"></i> Share
+                        <FaShareNodes /> Share
                         </a>
                     </div>
                     <div className="d-flex align-items-center mb-3">
