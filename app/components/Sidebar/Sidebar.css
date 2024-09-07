@@ -25,5 +25,7 @@ aside{width: 300px;}
 
 @media (max-width: 1199.98px) {
     .nav-sidebar {position: fixed;top:0;left: 100%;width: 300px;height: 100dvh;z-index: 999;background: var(--white);}
-body.open-menu .nav-sidebar{left: 0;}
+    body.open-menu .nav-sidebar{left: 0;}
+
+    body.open-menu .page-wrapper::before{content:"";position: fixed;top: 0;left: 0;right: 0;bottom: 0;filter: blur(10px);z-index: 99;background: rgba(0, 0, 0, 0.5);}
 }

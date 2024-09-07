@@ -42,7 +42,7 @@ const PostCard: React.FC<PostCardProps> = ({ singlePost }) => {
 
 
                         <a href="/images/post/img4.jpg" data-toggle="lightbox">
-                            <img src="/images/post/img4.jpg" className="w-100 h-100 object-fit-cover rounded" alt="Post Image" />
+                            <img src="/images/post/img4.jpg" className="w-100 h-100 object-fit-cover" alt="Post Image" />
                         </a>
 
 

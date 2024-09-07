@@ -6,7 +6,7 @@ import './Sidebar.css'
 
 const Sidebar = () => {
   const [darkMode, setDarkMode] = useState(false);
-  const sidebarRef = useRef(null);
+  const sidebarRef = useRef<HTMLDivElement | null>(null);
 
   // Toggle dark mode
   const handleDarkModeToggle = () => {
@@ -28,10 +28,10 @@ const Sidebar = () => {
   }, [darkMode]);
 
   // Handle clicks outside the sidebar
-  const handleClickOutside = (event: { target: any }) => {
-    if (sidebarRef.current && sidebarRef.current.contains(event.target)) {
+  const handleClickOutside = (event: MouseEvent) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
       // Remove any existing "open-menu" class from body
-      document.body.classList.remove('open-menu');
+      document.body.classList.remove('open-menu', 'overflow-hidden');
     }
   }
 

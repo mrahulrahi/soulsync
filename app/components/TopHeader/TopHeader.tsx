@@ -4,6 +4,7 @@ import './TopHeader.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CgMenuMotion } from 'react-icons/cg';
+import { CiCirclePlus } from 'react-icons/ci';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ const Header = () => {
                                 <div className="header-right d-flex align-items-center gap-4">
                                     <div className="dropdown upload-dropdown">
                                         <a className="btn btn-default" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Upload
+                                           <span className="d-none d-md-block">Upload</span> <span className=" d-md-none"><CiCirclePlus /></span>
                                         </a>
 
                                         <ul className="dropdown-menu">

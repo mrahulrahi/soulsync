@@ -18,3 +18,5 @@ header{background: var(--white);height: 66px;border: 1px solid #e5e7eb;}
  .notification-row+.notification-row{margin-top: 20px;}
 
  .navbar-toggler-icon{font-size: 30px;}
+ .dropdown > .avatar{width: 32px;}
+ .dropdown > .avatar img{width: 100%;height: 100%;object-fit: cover;}
