@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import './TopHeader.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { CgMenuMotion } from 'react-icons/cg';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,8 +32,8 @@ const Header = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="d-flex align-items-center justify-content-center justify-content-sm-between">
-                                <button className="navbar-toggler" onClick={handleMenuToggle}>
-                                    <span className="navbar-toggler-icon">=</span>
+                                <button className="navbar-toggler d-xl-none" onClick={handleMenuToggle}>
+                                    <span className="navbar-toggler-icon d-flex align-items-center justify-content-center"><CgMenuMotion /></span>
                                 </button>
                                 <div className="search-box-group">
                                     <span className="search-icon d-flex align-items-center justify-content-center" id="basic-addon1">

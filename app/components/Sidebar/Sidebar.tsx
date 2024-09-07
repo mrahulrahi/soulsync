@@ -1,34 +1,53 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import './Sidebar.css'
 
 const Sidebar = () => {
-    const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+  const sidebarRef = useRef(null);
 
-    // Toggle dark mode
-    const handleDarkModeToggle = () => {
-        setDarkMode(prevMode => !prevMode);
+  // Toggle dark mode
+  const handleDarkModeToggle = () => {
+    setDarkMode(prevMode => !prevMode);
+  }
+
+  // Update body class based on dark mode state
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
     }
 
-    // Update body class based on dark mode state
-    useEffect(() => {
-        if (darkMode) {
-            document.body.classList.add('dark-mode');
-        } else {
-            document.body.classList.remove('dark-mode');
-        }
+    // Cleanup function to remove the class on unmount
+    return () => {
+      document.body.classList.remove('dark-mode');
+    }
+  }, [darkMode]);
 
-        // Cleanup function to remove the class on unmount
-        return () => {
-            document.body.classList.remove('dark-mode');
-        }
-    }, [darkMode]);
+  // Handle clicks outside the sidebar
+  const handleClickOutside = (event: { target: any }) => {
+    if (sidebarRef.current && sidebarRef.current.contains(event.target)) {
+      // Remove any existing "open-menu" class from body
+      document.body.classList.remove('open-menu');
+    }
+  }
 
-    return (
-        <aside className="nav-sidebar flex-shrink-0 h-100">
-            <div>
+  // Add event listener on component mount
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Cleanup function to remove event listener on unmount
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, []);
+
+  return (
+    <aside className="nav-sidebar flex-shrink-0 h-100" ref={sidebarRef}>  {/* Assign ref to sidebar element */}
+  <div>
                 <div className="nav-head d-flex align-items-center justify-content-between">
                     <Link href="/" className="nav-brand">
                         <Image src="/images/logo.svg" alt="logo" width={130} height={50} quality={100} />
@@ -151,8 +170,8 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
-        </aside>
-    )
+    </aside>
+  )
 }
 
 export default Sidebar

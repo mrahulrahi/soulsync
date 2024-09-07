@@ -16,3 +16,5 @@ header{background: var(--white);height: 66px;border: 1px solid #e5e7eb;}
  .notification-btn+.dropdown-menu .notification-footer{padding: 12px 24px;}
  .notification-btn+.dropdown-menu .notification-box{gap: 10px;} 
  .notification-row+.notification-row{margin-top: 20px;}
+
+ .navbar-toggler-icon{font-size: 30px;}
