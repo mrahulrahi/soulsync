@@ -14,7 +14,7 @@ const PostCard: React.FC<PostCardProps> = ({ singlePost }) => {
         <div className="mt-5 mx-auto">
             <div className="post-card shadow-sm rounded border-0 bg-white">
                 <div className="post-card-header d-flex justify-content-between align-items-center bg-white">
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center gap-2">
                         <a href="#" className="post-profile-img-box rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
                             <div className="post-profile-img ratio ratio-1x1 rounded-circle overflow-hidden">
                                 <Image src="/images/avatars/avatar-2.jpg" alt="profile" fill className="w-100 h-100 object-fit-cover" />
@@ -23,10 +23,10 @@ const PostCard: React.FC<PostCardProps> = ({ singlePost }) => {
                         <span className="ml-3 font-weight-bold">Johnson Emma</span>
                     </div>
                     <div className="dropdown">
-                        <button className="text-dark dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button className="text-dark border-0 bg-transparent" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <FaEllipsis />
                         </button>
-                        <div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                        <div className="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuLink">
                             <a className="dropdown-item" href="#"><FaShareNodes /> Share</a>
                             <a className="dropdown-item" href="#"><FaRegEdit /> Edit Post</a>
                             <a className="dropdown-item" href="#"><FaCommentSlash /> Disable comments</a>
@@ -82,13 +82,13 @@ const PostCard: React.FC<PostCardProps> = ({ singlePost }) => {
 
                 <div className="post-card-footer">
                     <div className="d-flex justify-content-between mb-3">
-                        <a href="#" className="d-flex align-items-center">
+                        <a href="#" className="d-flex align-items-center gap-2">
                         <FaRegHeart /> Like
                         </a>
-                        <a href="#" className="d-flex align-items-center">
+                        <a href="#" className="d-flex align-items-center gap-2">
                         <FaRegComment /> Comment
                         </a>
-                        <a href="#" className="d-flex align-items-center ml-auto">
+                        <a href="#" className="d-flex align-items-center gap-2 ml-auto">
                         <FaShareNodes /> Share
                         </a>
                     </div>

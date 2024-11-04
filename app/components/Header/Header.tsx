@@ -13,7 +13,7 @@ const Header = () => {
                                 <Link href="/" className="nav-brand">
                                     <Image src="/images/logo.svg" alt="logo" width={130} height={50}  quality={100} />
                                 </Link>
-                                <div className="header-right d-none d-sm-block">
+                                <div className="header-right d-none d-sm-flex gap-3">
                                     <Link href="/login" className="btn btn-light">Login</Link>
                                     <Link href="/register" className="btn btn-default">Register</Link>
                                 </div>
